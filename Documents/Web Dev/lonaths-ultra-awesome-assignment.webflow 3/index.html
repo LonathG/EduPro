@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Apr 27 2026 19:33:15 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="69ec8bfdf663865f7dad0561" data-wf-site="69ec8bfbf663865f7dad051f">
+
+<head>
+  <meta charset="utf-8">
+  <title>Conicorn - Webflow HTML website template</title>
+  <meta
+    content="Conicorns is a modern Webflow template designed for startups to build beautiful websites, manage workflows, and grow their business."
+    name="description">
+  <meta content="Conicorn - Webflow HTML website template" property="og:title">
+  <meta
+    content="Conicorns is a modern Webflow template designed for startups to build beautiful websites, manage workflows, and grow their business."
+    property="og:description">
+  <meta content="https://cdn.prod.website-files.com/69ec8bfbf663865f7dad051f/69ec8bfdf663865f7dad05fc_Open%20Graph.png"
+    property="og:image">
+  <meta content="Conicorn - Webflow HTML website template" property="twitter:title">
+  <meta
+    content="Conicorns is a modern Webflow template designed for startups to build beautiful websites, manage workflows, and grow their business."
+    property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/lonaths-ultra-awesome-assignment.webflow.css" rel="stylesheet" type="text/css">
+  <style>
+    html.w-mod-js:not(.w-mod-ix3) :is(.button-text, .icon-button, .process-line, .about-text, .preload-logo, .preload-text) {
+      visibility: hidden !important;
+    }
+  </style>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+        /* Make mask on both sides */
+        .mask-wrapper {
+          -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+        }
+
+        /* Make text look crisper and more legible in all browsers */
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+        }
+
+        /* Focus state style for keyboard navigation for the focusable elements */
+        *[tabindex]:focus-visible,
+        input[type="file"]:focus-visible {
+          outline: 0.125rem solid #4d65ff;
+          outline-offset: 0.125rem;
+        }
+
+        /* Set color style to inherit */
+        .inherit-color * {
+          color: inherit;
+        }
+
+        /* Get rid of top margin on first element in any rich text element */
+        .w-richtext> :not(div):first-child,
+        .w-richtext>div:first-child> :first-child {
+          margin-top: 0 !important;
+        }
+
+        /* Get rid of bottom margin on last element in any rich text element */
+        .w-richtext>:last-child,
+        .w-richtext ol li:last-child,
+        .w-richtext ul li:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        /* Make sure containers never lose their center alignment */
+        .container-medium,
+        .container-small,
+        .container-large {
+          margin-right: auto !important;
+          margin-left: auto !important;
+        }
+
+        /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+        /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+        /* Apply "..." after 3 lines of text */
+        .text-style-3lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+
+        /* Apply "..." after 2 lines of text */
+        .text-style-2lines {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+
+        /* These classes are never overwritten */
+        .hide {
+          display: none !important;
+        }
+
+        @media screen and (max-width: 991px) {
+
+          .hide,
+          .hide-tablet {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .hide-mobile-landscape {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          .hide-mobile {
+            display: none !important;
+          }
+        }
+
+        .margin-0 {
+          margin: 0rem !important;
+        }
+
+        .padding-0 {
+          padding: 0rem !important;
+        }
+
+        .spacing-clean {
+          padding: 0rem !important;
+          margin: 0rem !important;
+        }
+
+        .margin-top {
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-top {
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-right {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-right {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-bottom {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-bottom {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+
+        .margin-left {
+          margin-top: 0rem !important;
+          margin-right: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-left {
+          padding-top: 0rem !important;
+          padding-right: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-horizontal {
+          margin-top: 0rem !important;
+          margin-bottom: 0rem !important;
+        }
+
+        .padding-horizontal {
+          padding-top: 0rem !important;
+          padding-bottom: 0rem !important;
+        }
+
+        .margin-vertical {
+          margin-right: 0rem !important;
+          margin-left: 0rem !important;
+        }
+
+        .padding-vertical {
+          padding-right: 0rem !important;
+          padding-left: 0rem !important;
+        }
+      </style>
+    </div>
+    <div class="main-wrapper">
+      <div style="opacity:1" class="preloader">
+        <div class="preload-logo-wrap"><img src="images/logoicon.svg" loading="lazy" alt="Logo Icon"
+            class="preload-logo">
+          <div class="preload-text">Conicorn</div>
+        </div>
+      </div>
+      <div class="navbar-wraper">
+        <div class="navbar-bg-blur"></div>
+        <div data-animation="default" data-collapse="all" data-duration="0" data-easing="ease" data-easing2="ease"
+          role="banner" class="navbar w-nav">
+          <div class="navbar-container">
+            <a href="index.html" aria-current="page" class="navbar-brand-link w-nav-brand w--current"><img
+                loading="lazy" src="images/logoicon.svg" alt="Logo Icon" class="navbar-brand-logo"></a>
+            <div class="navbar-actions">
+              <div class="nav_menu-button w-nav-button">
+                <div class="nav_menu-button-layout">
+                  <div class="menu-icon_component">
+                    <div class="menu-icon_line-top"></div>
+                    <div class="menu-icon_line-bottom"></div>
+                  </div>
+                  <div>Sections</div>
+                </div>
+              </div>
+              <a data-wf--button--variant="nav-button"
+                href="https://docs.google.com/document/d/1cJS3Dtn2kC8_2fC1_xNAU0qlHIea7AKRPLzCj4g_gXo/edit?usp=sharing"
+                target="_blank" class="button w-variant-d6f4d07e-f571-00de-5ad3-41cfcf2e46d1 w-inline-block">
+                <div class="button-inner w-variant-d6f4d07e-f571-00de-5ad3-41cfcf2e46d1">
+                  <div class="button-contact-avt"><img loading="lazy" src="images/contact-avt.png" alt="avatar"
+                      class="button-contact-avt-img"><img loading="lazy" src="images/contact-avt-1.png" alt="avatar"
+                      class="button-contact-avt-img"></div>
+                  <div class="button-text-wrap">
+                    <div class="button-text w-variant-d6f4d07e-f571-00de-5ad3-41cfcf2e46d1">Questions</div>
+                  </div>
+                </div>
+                <div class="button-innershadow w-variant-d6f4d07e-f571-00de-5ad3-41cfcf2e46d1"></div>
+              </a>
+            </div>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <div class="nav-menu-link-wrap">
+                <a href="#answer-1" class="nav-link w-nav-link">Answer 1</a>
+                <a href="#answer-2" class="nav-link w-nav-link">Answer 2</a>
+                <a href="#answer-3" class="nav-link w-nav-link">Answer 3</a>
+                <a href="#answer-4" class="nav-link w-nav-link">Answer 4</a>
+                <a href="#answer-5" class="nav-link w-nav-link">Answer 5</a>
+                <a href="#answer-6" class="nav-link w-nav-link">Answer 6</a>
+                <a href="#answer-7" class="nav-link w-nav-link">Answer 7</a>
+                <a href="#answer-8" class="nav-link w-nav-link">Answer 8</a>
+                <a href="#answer-9" class="nav-link w-nav-link">Answer 9</a>
+                <a href="#answer-10" class="nav-link w-nav-link">Answer 10</a>
+                <a href="#answer-11" class="nav-link w-nav-link">Answer 11</a>
+                <a href="#answer-12" class="nav-link w-nav-link">Answer 12</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <section class="section hero">
+        <div class="hero-section-wrap">
+          <div class="padding-global">
+            <div class="container-base hero">
+              <div class="hero-layout">
+                <div class="hero-content">
+                  <div class="hero-heading-wrap">
+                    <div class="hero-eye-brow">
+                      <div class="capabilities-check-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                          height="100%" viewbox="0 0 16 16" fill="none" preserveaspectratio="xMidYMid meet"
+                          aria-hidden="true" role="img">
+                          <g clip-path="url(#clip0_6295_123)">
+                            <path
+                              d="M11.9757 1.82204C12.0797 2.19737 12.1837 2.48871 12.2984 2.72404C12.5264 3.19737 12.8037 3.47404 13.2784 3.70204C13.5137 3.81537 13.805 3.91937 14.1797 4.02471C14.833 4.20871 14.8264 5.13671 14.171 5.31137C13.8646 5.39248 13.5657 5.49976 13.2777 5.63204C12.8044 5.86004 12.5264 6.13671 12.3024 6.60071C12.1676 6.89083 12.0591 7.19249 11.9784 7.50204C11.8064 8.16071 10.873 8.16871 10.6904 7.51204C10.5864 7.13537 10.4824 6.84404 10.3677 6.60937C10.1397 6.13604 9.86237 5.86004 9.3957 5.63604C9.10107 5.49834 8.79446 5.38788 8.4797 5.30604C8.46604 5.30266 8.45266 5.2982 8.4397 5.29271L8.41037 5.28137L8.38037 5.26804L8.3477 5.25137L8.32437 5.23804C8.31301 5.23217 8.30209 5.22548 8.2917 5.21804L8.27037 5.20271L8.2417 5.18004L8.2197 5.16137L8.1957 5.13804L8.17303 5.11471L8.15437 5.09271L8.13103 5.06404L8.11637 5.04271C8.10847 5.03235 8.10134 5.02144 8.09503 5.01004L8.0817 4.98671L8.06503 4.95337L8.0517 4.92404L8.04037 4.89537C8.03487 4.88241 8.03042 4.86904 8.02703 4.85537L8.02037 4.83271C8.01375 4.81143 8.00928 4.78954 8.00703 4.76737L8.00303 4.72404L7.9997 4.70071V4.66737C7.99835 4.64847 7.99902 4.62947 8.0017 4.61071C8.00264 4.58981 8.00554 4.56906 8.01037 4.54871C8.01326 4.52532 8.01862 4.5023 8.02637 4.48004C8.02975 4.46638 8.03421 4.453 8.0397 4.44004L8.05103 4.41071L8.06437 4.38071L8.08103 4.34804L8.09437 4.32471C8.10024 4.31335 8.10693 4.30244 8.11437 4.29204L8.1297 4.27071L8.15237 4.24204L8.17103 4.22004L8.19437 4.19604L8.2177 4.17337C8.22437 4.16671 8.2317 4.16048 8.2397 4.15471L8.26837 4.13137L8.2897 4.11671C8.30005 4.10881 8.31097 4.10168 8.32237 4.09537L8.3457 4.08204L8.37903 4.06537L8.40837 4.05204L8.43703 4.04071C8.44999 4.03521 8.46337 4.03076 8.47703 4.02737L8.49503 4.02204C8.8012 3.94111 9.09985 3.83405 9.3877 3.70204C9.86103 3.47404 10.139 3.19737 10.3677 2.72471C10.481 2.48871 10.5857 2.19671 10.6897 1.82137C10.871 1.17071 11.7944 1.17071 11.975 1.82137"
+                              fill="currentColor"></path>
+                            <path
+                              d="M7.30967 4.49138C7.40701 4.84738 7.51879 5.19716 7.64501 5.54071C8.21567 7.06071 8.94167 7.78271 10.465 8.35404C10.7797 8.47182 11.1288 8.58427 11.5123 8.69138C12.163 8.87271 12.1617 9.79538 11.511 9.97604C11.1563 10.0743 10.8079 10.1863 10.4657 10.312C8.94034 10.884 8.21501 11.6054 7.64634 13.1227C7.51886 13.4685 7.40653 13.8198 7.30967 14.1754C7.13101 14.8307 6.20167 14.8307 6.02301 14.1754C5.9265 13.8209 5.81462 13.4708 5.68767 13.126C5.11701 11.6054 4.39167 10.884 2.87034 10.3134C2.52105 10.1846 2.16652 10.0705 1.80767 9.97138C1.7954 9.96824 1.78337 9.96423 1.77167 9.95938L1.74234 9.94804L1.71367 9.93471C1.70255 9.93034 1.69184 9.92499 1.68167 9.91871L1.65767 9.90538C1.64655 9.89948 1.63586 9.89279 1.62567 9.88538L1.60434 9.86938L1.57501 9.84671L1.55301 9.82738L1.52834 9.80471L1.50567 9.78004L1.48567 9.75804L1.46367 9.72871L1.44834 9.70738C1.44093 9.6972 1.43424 9.6865 1.42834 9.67538L1.41434 9.65138C1.40806 9.64121 1.40271 9.6305 1.39834 9.61938L1.38501 9.59071L1.37367 9.56138C1.36882 9.54968 1.36481 9.53765 1.36167 9.52538C1.35858 9.51696 1.35635 9.50825 1.35501 9.49938C1.35091 9.48652 1.34779 9.47337 1.34567 9.46004L1.34101 9.43338L1.33634 9.39604L1.33434 9.36671L1.33301 9.33338V9.30004C1.33301 9.28982 1.3339 9.28004 1.33567 9.27071C1.33612 9.25738 1.33767 9.24471 1.34034 9.23271L1.34501 9.20604C1.34713 9.18883 1.35092 9.17186 1.35634 9.15538L1.36101 9.14138C1.36415 9.12911 1.36816 9.11708 1.37301 9.10538L1.38434 9.07604L1.39767 9.04738C1.40204 9.03625 1.4074 9.02555 1.41367 9.01538L1.42701 8.99138C1.43291 8.98025 1.43959 8.96956 1.44701 8.95938L1.46301 8.93804L1.48567 8.90871L1.50501 8.88671L1.52767 8.86204L1.55234 8.83938L1.57434 8.81938L1.60367 8.79738L1.62501 8.78204C1.63519 8.77463 1.64588 8.76795 1.65701 8.76204L1.68101 8.74804C1.69118 8.74177 1.70188 8.73641 1.71301 8.73204L1.74167 8.71871L1.77101 8.70738C1.78271 8.70253 1.79474 8.69852 1.80701 8.69538L1.82101 8.69071C2.17392 8.59311 2.52266 8.48102 2.86634 8.35471C4.39101 7.78271 5.11634 7.06138 5.68567 5.54404C5.81316 5.19822 5.92549 4.847 6.02234 4.49138C6.20101 3.83604 7.13034 3.83604 7.30901 4.49138"
+                              fill="currentColor"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_6295_123">
+                              <rect width="16" height="16" fill="currentColor"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></div>
+                      <div>by Lonath G</div>
+                    </div>
+                    <h1 class="hero-heading">A Glimpse From My Creative Narration</h1>
+                  </div>
+                  <p class="subheading-text hero">Through sharp creative narration, I amplified Sri Lanka’s vibrant
+                    heritage into a high-definition, multi-dimensional identity.</p>
+                </div>
+                <div class="button-wrap">
+                  <a data-wf--button--variant="base" href="#" target="_blank" class="button w-inline-block">
+                    <div class="button-inner">
+                      <div class="button-contact-avt"><img loading="lazy" src="images/contact-avt.png" alt="avatar"
+                          class="button-contact-avt-img"><img loading="lazy" src="images/contact-avt-1.png" alt="avatar"
+                          class="button-contact-avt-img"></div>
+                      <div class="button-text-wrap">
+                        <div class="button-text">View Sections</div>
+                      </div>
+                      <div class="button-icon">
+                        <div class="icon-button w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 16 16" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <g clip-path="url(#clip0_6234_2207)">
+                              <path d="M3.33301 8H12.6663" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path d="M10 10.6667L12.6667 8" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                              <path d="M10 5.33333L12.6667 8" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_6234_2207">
+                                <rect width="16" height="16" fill="currentColor"></rect>
+                              </clippath>
+                            </defs>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div class="button-innershadow"></div>
+                  </a>
+                  <a data-wf--button--variant="contact-button" href="#"
+                    class="button w-variant-9943b888-52fe-aefa-9593-d1e9001eb671 w-inline-block">
+                    <div class="button-inner w-variant-9943b888-52fe-aefa-9593-d1e9001eb671">
+                      <div class="button-contact-avt w-variant-9943b888-52fe-aefa-9593-d1e9001eb671"><img loading="lazy"
+                          src="images/Lonath-Potrait (1).jpg" alt="avatar" class="button-contact-avt-img">
+                      </div>
+                      <div class="button-text-wrap">
+                        <div class="button-text" href="#answer-1">Start Narrative</div>
+                      </div>
+                    </div>
+                    <div class="button-innershadow w-variant-9943b888-52fe-aefa-9593-d1e9001eb671"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bg">
+            <div class="hero-bg-video-gradient-top"></div>
+            <div class="hero-bg-video-gradient-bottom"></div>
+            <div class="hero-bg-overlay"></div>
+            <div
+              data-poster-url="https://cdn.prod.website-files.com/69abbb96278770785e4b2dc1%2F69b2815e8cd44081a7e9719d_Hero%20Video_2_poster.0000000.jpg"
+              data-video-urls="videos/Hero-Video_2_mp4.mp4,videos/Hero-Video_2_webm.webm" data-autoplay="true"
+              data-loop="true" data-wf-ignore="true" class="hero-bg-video w-background-video w-background-video-atom">
+              <video id="f569051d-4691-7db2-17e9-581087d0d9f0-video" autoplay="" loop=""
+                style="background-image:url(&quot;https://cdn.prod.website-files.com/69abbb96278770785e4b2dc1%2F69b2815e8cd44081a7e9719d_Hero%20Video_2_poster.0000000.jpg&quot;)"
+                muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+                <source src="videos/Hero-Video_2_mp4.mp4" data-wf-ignore="true">
+                <source src="videos/Hero-Video_2_webm.webm" data-wf-ignore="true">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="logo-marquee-section">
+          <div class="padding-global">
+            <div class="container-base"></div>
+          </div>
+        </div>
+      </section>
+      <section id="about-section" class="section about">
+        <div class="padding-global">
+          <div class="container-base">
+            <div class="about-layout">
+              <div data-w-id="0afe19ee-f4c2-50ad-d3ca-62a5d21eab12" id="answer-1"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="about-top">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">001</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer</div>
+                  </div>
+                </div>
+                <div class="about-text">I led the full-lifecycle transformation for <strong>Artisan Antiques</strong>,
+                  overseeing everything from the <strong>initial logo conceptualization</strong> to the
+                  <strong>technical finalization of the web platform</strong>. By bridging the gap between brand
+                  identity and digital architecture, I ensured that the &#x27;bespoke&#x27; soul of the furniture was
+                  felt in every touchpoint. My direction moved the brand from a standard furniture store to a
+                  <strong>curated digital gallery</strong>, utilizing high-contrast typography and cinematic motion to
+                  elevate perceived value and drive high-ticket client engagement.
+                </div>
+              </div>
+              <div data-w-id="449c9d11-5dca-1152-011d-b93391063a31"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="about-bottom">
+                <div class="about-video-wrap">
+                  <div class="about-video">
+                    <div class="slideshow-container">
+                      <img src="images/slide01/Bespoke.jpg" alt="Slide 1" class="slideshow-image">
+                      <img src="images/slide01/Brochure01.png" alt="Slide 2" class="slideshow-image">
+                      <img src="images/slide01/BusinessCard02.jpg" alt="Slide 3" class="slideshow-image">
+                      <img src="images/slide01/Catalog.jpg" alt="Slide 4" class="slideshow-image">
+                    </div>
+                  </div>
+                  <div class="about-video-fiiter"></div>
+                </div>
+                <div class="statics-marquee">
+                  <div class="statics-marquee-list">
+                    <div class="statics-item">
+                      <div class="statics-item-number">500+</div>
+                      <div class="statics-item-name">Creative Hours Reclaimed</div>
+                    </div>
+                    <div class="statics-item">
+                      <div class="statics-item-number">80%</div>
+                      <div class="statics-item-name">Review Efficiency</div>
+                    </div>
+                    <div class="statics-item">
+                      <div class="statics-item-number">5x</div>
+                      <div class="statics-item-name">Deployment Velocity</div>
+                    </div>
+                  </div>
+                  <div class="statics-marquee-list">
+                    <div class="statics-item">
+                      <div class="statics-item-number">500+</div>
+                      <div class="statics-item-name">Creative Hours Reclaimed</div>
+                    </div>
+                    <div class="statics-item">
+                      <div class="statics-item-number">80%</div>
+                      <div class="statics-item-name">Review Efficiency</div>
+                    </div>
+                    <div class="statics-item">
+                      <div class="statics-item-number">5x</div>
+                      <div class="statics-item-name">Deployment Velocity</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="values-section" class="section value">
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="value-layout">
+              <div data-w-id="95a668dd-af96-eced-7a2e-863d6f32761d" id="answer-2"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="heading-layout">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">002</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer<br></div>
+                  </div>
+                </div>
+                <div class="heading-wrap">
+                  <h2 class="heading-style-h2">Engineering Immersion</h2>
+                  <p class="subheading-text">During the development of the LuvEsence VR Plank Experience, our initial
+                    creative direction was to build a hyper-realistic, high-fidelity 3D city environment. However, early
+                    into the &#x27;gray-box&#x27; testing phase, I identified a critical technical constraint: the sheer
+                    complexity of the geometry was hitting performance bottlenecks on the standalone hardware, risking a
+                    choppy user experience that would have felt &#x27;cheap&#x27; and broken the immersion.</p>
+                </div>
+              </div>
+              <div data-w-id="95a668dd-af96-eced-7a2e-863d6f327621"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="value-bottom">
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path
+                                d="M27.4055 44.0403C27.4179 43.7474 27.9032 43.631 28.0471 43.8865C28.7226 45.0857 29.875 46.8493 31.1826 47.6512C32.4902 48.4531 34.5846 48.6806 35.9597 48.739C36.2527 48.7514 36.369 49.2367 36.1136 49.3806C34.9144 50.0561 33.1508 51.2085 32.3489 52.5161C31.547 53.8237 31.3195 55.9181 31.2611 57.2932C31.2486 57.5862 30.7634 57.7025 30.6195 57.4471C29.944 56.2479 28.7916 54.4843 27.484 53.6823C26.1763 52.8804 24.0819 52.653 22.7068 52.5946C22.4139 52.5821 22.2975 52.0969 22.553 51.953C23.7522 51.2775 25.5158 50.1251 26.3177 48.8175C27.1196 47.5098 27.3471 45.4154 27.4055 44.0403Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M49.3123 41.3734C49.2897 41.081 48.7781 40.9584 48.6255 41.2087C48.166 41.9621 47.5034 42.8713 46.767 43.3229C46.0305 43.7746 44.9197 43.9529 44.0399 44.0209C43.7475 44.0434 43.6249 44.555 43.8752 44.7077C44.6286 45.1671 45.5378 45.8297 45.9894 46.5662C46.4411 47.3027 46.6194 48.4135 46.6874 49.2933C46.7099 49.5856 47.2215 49.7083 47.3742 49.4579C47.8336 48.7046 48.4962 47.7954 49.2327 47.3437C49.9692 46.8921 51.08 46.7138 51.9598 46.6458C52.2521 46.6232 52.3748 46.1116 52.1245 45.959C51.3711 45.4995 50.4619 44.8369 50.0102 44.1005C49.5586 43.364 49.3803 42.2532 49.3123 41.3734Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M39.2098 10.6714L38.5636 9.85521C36.0659 6.70035 34.817 5.12292 33.3641 5.35578C31.9112 5.58864 31.2165 7.47758 29.827 11.2555L29.4675 12.2329C29.0727 13.3064 28.8753 13.8432 28.4967 14.2372C28.118 14.6311 27.601 14.8377 26.5671 15.2509L25.6258 15.627L24.9648 15.8915C21.7661 17.1748 20.1543 17.9021 19.9485 19.3152C19.729 20.8226 21.2546 22.112 24.3058 24.691L25.0952 25.3582C25.9623 26.091 26.3958 26.4575 26.6443 26.9569C26.8928 27.4564 26.9282 28.0323 26.999 29.1842L27.0634 30.2328C27.3124 34.2863 27.4369 36.313 28.7541 37.0117C30.0714 37.7104 31.709 36.6184 34.9841 34.4344L34.9842 34.4344L35.8315 33.8694C36.7622 33.2488 37.2276 32.9384 37.7598 32.8531C38.2921 32.7678 38.8309 32.9172 39.9086 33.2159L40.8897 33.4879C44.6821 34.5392 46.5783 35.0648 47.6119 33.9893C48.6455 32.9138 48.132 30.9494 47.105 27.0207L46.8393 26.0043C46.5475 24.8878 46.4015 24.3296 46.4819 23.7774C46.5624 23.2253 46.86 22.7417 47.4553 21.7745L47.4553 21.7744L47.9972 20.8938C50.0921 17.4901 51.1395 15.7883 50.4611 14.4248C49.7826 13.0614 47.8276 12.9394 43.9177 12.6953L42.9061 12.6321C41.7951 12.5628 41.2395 12.5281 40.757 12.2721C40.2745 12.0162 39.9196 11.5679 39.2098 10.6714L39.2098 10.6714Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M23.5594 35.5367C17.8599 38.3212 13.1175 42.7313 11.3285 48.0012C9.32171 35.4477 12.1054 27.3411 16.5676 22.3027C16.9521 23.0887 17.4518 23.7393 17.9006 24.2478C18.8336 25.305 20.1732 26.4366 21.5333 27.5856L22.512 28.4128C22.6976 28.5696 22.8419 28.6917 22.9646 28.7976C22.9771 28.9692 22.9895 29.1695 23.0054 29.4291L23.0849 30.7237C23.1918 32.4703 23.2962 34.1754 23.5594 35.5367Z"
+                                fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">01</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">Problem</div>
+                    <div class="value-card-desc">During the LuvEsence VR development, high-fidelity city geometry hit a
+                      technical bottleneck on standalone hardware. A &#x27;choppy&#x27; frame rate was threatening the
+                      premium brand perception.</div>
+                  </div>
+                </div>
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M40.1952 37.7795L52.1706 25.8401C53.8953 24.1207 54.7576 23.2609 55.2118 22.1677C55.666 21.0744 55.666 19.8586 55.666 17.427V16.2653C55.666 12.5261 55.666 10.6565 54.5009 9.49487C53.3357 8.33325 51.4605 8.33325 47.71 8.33325H46.5449C44.1059 8.33325 42.8863 8.33325 41.7898 8.7861C40.6932 9.23894 39.8309 10.0987 38.1063 11.8181L26.1308 23.7575C24.1156 25.7666 22.866 27.0124 22.3822 28.2157C22.2293 28.5959 22.1528 28.9718 22.1528 29.3663C22.1528 31.009 23.4788 32.3311 26.1308 34.9751L26.4873 35.3304L30.6625 31.0929C31.258 30.4886 32.2306 30.4814 32.8349 31.0769C33.4392 31.6723 33.4464 32.6449 32.851 33.2492L28.663 37.4996L28.9437 37.7795C31.5957 40.4235 32.9217 41.7455 34.5695 41.7455C34.9335 41.7455 35.2819 41.681 35.6323 41.5519C36.8679 41.0968 38.1292 39.8393 40.1952 37.7795ZM45.8212 23.7583C44.2677 25.3072 41.749 25.3072 40.1955 23.7583C38.6419 22.2095 38.6419 19.6984 40.1955 18.1495C41.749 16.6007 44.2677 16.6007 45.8212 18.1495C47.3747 19.6984 47.3747 22.2095 45.8212 23.7583Z"
+                                fill="currentColor"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.89003 33.2889C10.5954 33.9951 10.5947 35.1394 9.88847 35.8447L9.51789 36.2148C9.20134 36.531 9.20134 37.0427 9.51789 37.3589C9.83565 37.6762 10.3518 37.6762 10.6695 37.3589L14.746 33.2874C15.4522 32.582 16.5965 32.5827 17.3018 33.2889C18.0072 33.9951 18.0065 35.1394 17.3003 35.8447L13.2238 39.9162C11.4948 41.643 8.69258 41.643 6.96363 39.9162C5.23348 38.1882 5.23348 35.3855 6.96363 33.6575L7.33422 33.2874C8.04042 32.582 9.18469 32.5827 9.89003 33.2889ZM20.6593 43.3236C21.3572 44.0372 21.3445 45.1814 20.6309 45.8793L16.5114 49.908C15.7979 50.6058 14.6537 50.5931 13.9558 49.8795C13.2579 49.166 13.2707 48.0218 13.9842 47.3239L18.1037 43.2952C18.8173 42.5973 19.9615 42.6101 20.6593 43.3236ZM30.6211 46.7095C31.3264 47.4157 31.3257 48.56 30.6195 49.2653L26.543 53.3368C26.2265 53.6529 26.2265 54.1646 26.543 54.4808C26.8608 54.7982 27.3769 54.7982 27.6947 54.4808L28.0652 54.1107C28.7714 53.4053 29.9157 53.406 30.6211 54.1122C31.3264 54.8184 31.3257 55.9627 30.6195 56.668L30.2489 57.0381C28.52 58.765 25.7177 58.765 23.9888 57.0381C22.2586 55.3101 22.2586 52.5075 23.9888 50.7794L28.0652 46.708C28.7714 46.0026 29.9157 46.0033 30.6211 46.7095Z"
+                                fill="currentColor"></path>
+                              <g opacity="0.5">
+                                <path
+                                  d="M29.1105 16.4506L23.9017 21.6437C22.9442 22.5983 22.066 23.4738 21.3724 24.2654C20.927 24.7737 20.4818 25.33 20.1048 25.9448L20.0541 25.8942C19.9577 25.7981 19.9095 25.75 19.8611 25.7031C18.9558 24.8246 17.8908 24.1262 16.7232 23.6452C16.6609 23.6195 16.5975 23.5944 16.4709 23.5442L15.6953 23.2369C14.6447 22.8206 14.3647 21.4681 15.1641 20.6711C17.4585 18.3836 20.2133 15.6373 21.5427 15.0857C22.7152 14.5992 23.9817 14.4373 25.2033 14.6179C26.3226 14.7833 27.3814 15.3582 29.1105 16.4506Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M38.0045 43.7937C38.4243 44.2197 38.7031 44.5207 38.955 44.8422C39.2876 45.2665 39.5849 45.7171 39.844 46.1896C40.1358 46.7215 40.3623 47.2896 40.8153 48.426C41.184 49.351 42.4091 49.5955 43.1206 48.8861L43.2928 48.7145C45.5871 46.427 48.3417 43.6806 48.895 42.3551C49.383 41.1862 49.5453 39.9234 49.3642 38.7056C49.1984 37.5898 48.6218 36.5343 47.5264 34.8108L42.3002 40.0213C41.321 40.9975 40.4232 41.8926 39.6113 42.5939C39.1247 43.0141 38.5923 43.4341 38.0045 43.7937Z"
+                                  fill="currentColor"></path>
+                              </g>
+                              <g opacity="0.5">
+                                <path
+                                  d="M21.5876 38.246C22.2934 37.5402 22.2934 36.396 21.5876 35.6902C20.8818 34.9844 19.7376 34.9844 19.0318 35.6902L13.9308 40.7911C13.225 41.4969 13.225 42.6411 13.9308 43.3469C14.6366 44.0527 15.7809 44.0527 16.4866 43.3469L21.5876 38.246Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M28.2761 44.9262C28.9818 44.2205 28.9818 43.0762 28.2761 42.3705C27.5703 41.6647 26.426 41.6647 25.7202 42.3705L20.6542 47.4365C19.9484 48.1422 19.9484 49.2865 20.6542 49.9923C21.3599 50.698 22.5042 50.698 23.21 49.9923L28.2761 44.9262Z"
+                                  fill="currentColor"></path>
+                              </g>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">02</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">Strategic Pivot</div>
+                    <div class="value-card-desc">I identified the weak link early and pivoted the strategy: I directed
+                      the team to strip the generic city and <strong>architect the world using oversized, high-fidelity
+                        product assets.</strong></div>
+                  </div>
+                </div>
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M45.1999 9.80005C46.194 9.80005 46.9999 10.6059 46.9999 11.6V17H52.3999C53.394 17 54.1999 17.8059 54.1999 18.8C54.1999 19.7941 53.394 20.6 52.3999 20.6H46.9999V26C46.9999 26.9941 46.194 27.8 45.1999 27.8C44.2058 27.8 43.3999 26.9941 43.3999 26V20.6H37.9999C37.0058 20.6 36.2 19.7941 36.2 18.8C36.2 17.8059 37.0058 17 37.9999 17H43.3999V11.6C43.3999 10.6059 44.2058 9.80005 45.1999 9.80005Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M8 18.8C8 13.7088 8 11.1632 9.58162 9.58162C11.1632 8 13.7088 8 18.8 8C23.8911 8 26.4367 8 28.0183 9.58162C29.6 11.1632 29.6 13.7088 29.6 18.8C29.6 23.8911 29.6 26.4367 28.0183 28.0183C26.4367 29.6 23.8911 29.6 18.8 29.6C13.7088 29.6 11.1632 29.6 9.58162 28.0183C8 26.4367 8 23.8911 8 18.8Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M34.4 45.1999C34.4 40.1087 34.4 37.5631 35.9816 35.9815C37.5633 34.3999 40.1088 34.3999 45.2 34.3999C50.2912 34.3999 52.8367 34.3999 54.4184 35.9815C56 37.5631 56 40.1087 56 45.1999C56 50.291 56 52.8366 54.4184 54.4182C52.8367 55.9999 50.2912 55.9999 45.2 55.9999C40.1088 55.9999 37.5633 55.9999 35.9816 54.4182C34.4 52.8366 34.4 50.291 34.4 45.1999Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M8 45.1999C8 40.1087 8 37.5631 9.58162 35.9815C11.1632 34.3999 13.7088 34.3999 18.8 34.3999C23.8911 34.3999 26.4367 34.3999 28.0183 35.9815C29.6 37.5631 29.6 40.1087 29.6 45.1999C29.6 50.291 29.6 52.8366 28.0183 54.4182C26.4367 55.9999 23.8911 55.9999 18.8 55.9999C13.7088 55.9999 11.1632 55.9999 9.58162 54.4182C8 52.8366 8 50.291 8 45.1999Z"
+                                fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">03</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">Impact</div>
+                    <div class="value-card-desc">The result was a high-performance, seamless experience where the brand
+                      was the literal hero of every frame. We turned a technical limitation into an unforgettable
+                      marketing asset.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service-section" class="section">
+        <div class="padding-global">
+          <div class="container-base">
+            <div class="capabilities-layout">
+              <div data-w-id="75c3db48-9bdd-29c5-cd0a-57fe74f82c3f" id="answer-3"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="heading-layout">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">003</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer</div>
+                  </div>
+                </div>
+                <div class="heading-wrap">
+                  <h2 class="heading-style-h2">Aligning Aesthetics with Business ROI</h2>
+                </div>
+              </div>
+              <div data-w-id="75c3db48-9bdd-29c5-cd0a-57fe74f82c48"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="capabilities-bottom">
+                <div class="capabilities-grid">
+                  <div id="w-node-_5af00600-6965-ff8b-e344-9f61328dffac-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-content">
+                      <p class="capabilities-card-subtitle"><span class="capabilities-card-title">Strategic Outcome
+                          Mapping.</span> I treat visual quality as the &#x27;hook&#x27; and commercial strategy as the
+                        &#x27;engine.&#x27; Every aesthetic choice is a hypothesis that must be validated by its ability
+                        to drive a specific user action.</p>
+                      <div class="capabilities-card-content-list">
+                        <div class="capabilities-card-content-item">
+                          <div class="capabilities-check-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                              width="100%" height="100%" viewbox="0 0 16 16" fill="none"
+                              preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                              <path d="M3.33334 8.00008L6.66667 11.3334L13.3333 4.66675" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
+                          <div class="capabilities-card-content-text"><strong>Conversion-Centric Design:</strong>
+                            Mapping UI to the final CTA.</div>
+                        </div>
+                        <div class="capabilities-card-content-item">
+                          <div class="capabilities-check-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                              width="100%" height="100%" viewbox="0 0 16 16" fill="none"
+                              preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                              <path d="M3.33334 8.00008L6.66667 11.3334L13.3333 4.66675" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
+                          <div class="capabilities-card-content-text"><strong>Psychological Triggers:</strong> Using
+                            visuals to lower user barriers.</div>
+                        </div>
+                        <div class="capabilities-card-content-item">
+                          <div class="capabilities-check-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                              width="100%" height="100%" viewbox="0 0 16 16" fill="none"
+                              preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+                              <path d="M3.33334 8.00008L6.66667 11.3334L13.3333 4.66675" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></div>
+                          <div class="capabilities-card-content-text"><strong>Data-Led Refinement:</strong> Post-launch
+                            auditing for actual ROI.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="capabilities-card-image-first"><img src="images/Cap1.png" loading="lazy"
+                        sizes="(max-width: 760px) 100vw, 760px"
+                        srcset="images/Cap1-p-500.png 500w, images/Cap1.png 760w" alt=""
+                        class="capabilities-card-image"></div>
+                  </div>
+                  <div id="w-node-_90a95350-6843-ac91-db7a-c7c70d5a067b-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-content">
+                      <p class="capabilities-card-subtitle"><span class="capabilities-card-title">01: The WHO-FEEL-DO
+                          Audit. </span>I deconstruct every asset through the <strong>WHO-FEEL-DO</strong> lens. If a
+                        visual element doesn’t directly assist the user in feeling the right emotion or taking the
+                        required action, it is removed as &#x27;decorative noise&#x27;</p>
+                    </div><img src="images/Cap2.png" loading="lazy" sizes="(max-width: 656px) 100vw, 656px"
+                      srcset="images/Cap2-p-500.png 500w, images/Cap2.png 656w" alt="" class="capabilities-card-image">
+                  </div>
+                  <div id="w-node-_30d45e7b-06bd-a6b7-eb44-bb85d089b6d8-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-content">
+                      <p class="capabilities-card-subtitle"><span class="capabilities-card-title">02:Performance-Based
+                          UX. </span>Visual quality is useless if the site doesn’t load. I prioritize technical
+                        performance (Next.js/Nginx) to ensure that high-fidelity motion sequences never compromise
+                        bounce rates or SEO rankings.</p>
+                    </div><img src="images/Cap3.png" loading="lazy" sizes="(max-width: 656px) 100vw, 656px"
+                      srcset="images/Cap3-p-500.png 500w, images/Cap3.png 656w" alt="" class="capabilities-card-image">
+                  </div>
+                  <div id="w-node-_02964711-9122-23a2-7065-78b7d5b7c103-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-content">
+                      <p class="capabilities-card-subtitle"><span class="capabilities-card-title">03: Lead Gen
+                          Integration.</span> In my <strong>VR PLANK </strong>project, I proved that &#x27;cool&#x27;
+                        isn&#x27;t enough. We built a high-fidelity experience that looked stunning but functioned as a
+                        <strong>lead-gen funnel</strong>, capturing 500+ verified leads in a single day.
+                      </p>
+                    </div><img src="images/Cap4.png" loading="lazy" sizes="(max-width: 656px) 100vw, 656px"
+                      srcset="images/Cap4-p-500.png 500w, images/Cap4.png 656w" alt="" class="capabilities-card-image">
+                  </div>
+                  <div id="w-node-cfea2cc3-188c-362a-87aa-5bc5360b080d-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-content">
+                      <p class="capabilities-card-subtitle"><span class="capabilities-card-title">04: Resource ROI.
+                        </span>I focus team resources on &#x27;needle-moving&#x27; assets. I determine if a project
+                        needs a cinematic 3D hero section or a high-converting lead form, ensuring the budget is spent
+                        on outcomes, not just aesthetics.</p>
+                    </div><img src="images/Cap5.png" loading="lazy" sizes="(max-width: 656px) 100vw, 656px"
+                      srcset="images/Cap5-p-500.png 500w, images/Cap5.png 656w" alt="" class="capabilities-card-image">
+                  </div>
+                </div>
+                <div class="capabilities-grid">
+                  <div id="w-node-_0a57ae18-ba1a-8704-4867-323a0366d6bf-7dad0561" class="modal-cta capabilities">
+                    <div class="modal-cta-top left">
+                      <div class="modal-cta-icon-wrap"><img src="images/contact-avt-1.png" loading="lazy" alt="avatar"
+                          class="modal-cta-icon-frame image">
+                        <div class="modal-cta-icon-frame">
+                          <div class="modal-cta-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 32 32" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path
+                                d="M20.7415 19.3969L20.1343 20.0363C20.1343 20.0363 18.6908 21.556 14.7508 17.4079C10.8108 13.2598 12.2543 11.7401 12.2543 11.7401L12.6367 11.3375C13.5788 10.3457 13.6676 8.75329 12.8457 7.5908L11.1643 5.21282C10.147 3.774 8.18128 3.58393 7.01527 4.81152L4.92247 7.01485C4.34431 7.62354 3.95687 8.4126 4.00385 9.28792C4.12405 11.5273 5.08095 16.3454 10.4205 21.9669C16.0829 27.9283 21.3958 28.1652 23.5684 27.9508C24.2556 27.883 24.8532 27.5124 25.3348 27.0053L27.2289 25.0112C28.5074 23.6652 28.1469 21.3576 26.5111 20.416L23.9638 18.9498C22.8897 18.3315 21.581 18.5131 20.7415 19.3969Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M17.6793 2.50677C17.7676 1.96158 18.283 1.59175 18.8282 1.68001C18.8619 1.68647 18.9705 1.70677 19.0274 1.71944C19.1411 1.74477 19.2998 1.78378 19.4977 1.84142C19.8934 1.95668 20.4462 2.14655 21.1097 2.45073C22.4381 3.05973 24.2058 4.12508 26.0402 5.95948C27.8746 7.79387 28.94 9.56163 29.549 10.89C29.8532 11.5535 30.043 12.1063 30.1583 12.502C30.2159 12.6999 30.2549 12.8586 30.2803 12.9723C30.293 13.0292 30.3022 13.0749 30.3087 13.1087L30.3163 13.1503C30.4046 13.6954 30.0381 14.2321 29.493 14.3204C28.9493 14.4084 28.4372 14.0404 28.3468 13.4977C28.344 13.4832 28.3363 13.444 28.3281 13.4071C28.3117 13.3333 28.2832 13.2162 28.2381 13.0613C28.1479 12.7515 27.9912 12.2911 27.7309 11.7235C27.2112 10.5898 26.2765 9.02417 24.626 7.37369C22.9755 5.72321 21.41 4.78855 20.2762 4.26877C19.7087 4.00856 19.2482 3.85185 18.9384 3.76162C18.7836 3.71651 18.5889 3.67183 18.515 3.65539C17.9724 3.56496 17.5913 3.0504 17.6793 2.50677Z"
+                                fill="currentColor"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.981 7.10605C18.1327 6.57502 18.6862 6.26753 19.2172 6.41925L18.9425 7.38078C19.2172 6.41925 19.2172 6.41925 19.2172 6.41925L19.2192 6.4198L19.2212 6.42039L19.2256 6.42169L19.236 6.42478L19.2624 6.43299C19.2825 6.43942 19.3076 6.4478 19.3375 6.45842C19.3974 6.47967 19.4765 6.50989 19.5736 6.55149C19.7679 6.63474 20.0333 6.7633 20.3593 6.95625C21.0119 7.34249 21.9028 7.98406 22.9494 9.03069C23.9961 10.0773 24.6376 10.9682 25.0239 11.6209C25.2168 11.9469 25.3454 12.2123 25.4286 12.4065C25.4703 12.5036 25.5005 12.5828 25.5217 12.6426C25.5323 12.6726 25.5407 12.6977 25.5471 12.7178L25.5554 12.7442L25.5584 12.7545L25.5597 12.7589L25.5603 12.761C25.5603 12.761 25.5609 12.7629 24.5994 13.0376L25.5609 12.7629C25.7126 13.2939 25.4051 13.8474 24.8741 13.9992C24.3476 14.1496 23.799 13.8486 23.6418 13.3258L23.6369 13.3115C23.6298 13.2914 23.615 13.252 23.5904 13.1944C23.541 13.0793 23.4516 12.891 23.3027 12.6395C23.0054 12.1372 22.4685 11.3782 21.5352 10.4449C20.602 9.51163 19.843 8.97469 19.3406 8.6774C19.0892 8.52858 18.9009 8.43912 18.7858 8.38978C18.7282 8.36509 18.6887 8.35038 18.6687 8.34327L18.6543 8.33835C18.1316 8.18118 17.8306 7.63258 17.981 7.10605Z"
+                                fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div class="modal-cta-content">
+                        <div class="modal-cta-title">The &quot;Phase Zero&quot; Session</div>
+                        <p class="modal-cta-desc">Unsure of the creative direction? I lead 30-minute Discovery Sprints
+                          to align stakeholders, define the tech-stack, and provide the team with a
+                          &#x27;Zero-Ambiguity&#x27; brief.</p>
+                      </div>
+                    </div>
+                    <a data-wf--button--variant="base" href="#" class="button w-inline-block">
+                      <div class="button-inner">
+                        <div class="button-contact-avt"><img loading="lazy" src="images/contact-avt.png" alt="avatar"
+                            class="button-contact-avt-img"><img loading="lazy" src="images/contact-avt-1.png"
+                            alt="avatar" class="button-contact-avt-img"></div>
+                        <div class="button-text-wrap">
+                          <div class="button-text">Start Discovery →</div>
+                        </div>
+                        <div class="button-icon">
+                          <div class="icon-button w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 16 16" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <g clip-path="url(#clip0_6234_2207)">
+                                <path d="M3.33301 8H12.6663" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path d="M10 10.6667L12.6667 8" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                                <path d="M10 5.33333L12.6667 8" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round"></path>
+                              </g>
+                              <defs>
+                                <clippath id="clip0_6234_2207">
+                                  <rect width="16" height="16" fill="currentColor"></rect>
+                                </clippath>
+                              </defs>
+                            </svg></div>
+                        </div>
+                      </div>
+                      <div class="button-innershadow"></div>
+                    </a>
+                    <div class="dots-partern"></div>
+                  </div>
+                  <div id="w-node-_7c687b4f-83db-89cf-98f3-fc8d4380e7d1-7dad0561" class="capabilities-card">
+                    <div class="capabilities-card-title larger">Vision. Protected. Always.</div>
+                    <div class="capabilities-data-grid">
+                      <div class="capabilities-data">
+                        <div class="capabilities-data-icon-wrap"><img src="images/Cap-Data-1.svg" loading="lazy"
+                            alt="Icon" class="capabilities-data-icon"></div>
+                        <div class="capabilities-data-title">Technical Integrity</div>
+                      </div>
+                      <div class="capabilities-data">
+                        <div class="capabilities-data-icon-wrap"><img src="images/Cap-Data-2.svg" loading="lazy"
+                            alt="Icon" class="capabilities-data-icon"></div>
+                        <div class="capabilities-data-title">Agile Execution</div>
+                      </div>
+                      <div class="capabilities-data">
+                        <div class="capabilities-data-icon-wrap"><img src="images/Cap-Data-3.svg" loading="lazy"
+                            alt="Icon" class="capabilities-data-icon"></div>
+                        <div class="capabilities-data-title">Quality Assurance</div>
+                      </div>
+                      <div class="capabilities-data">
+                        <div class="capabilities-data-icon-wrap"><img src="images/Cap-Data-4.svg" loading="lazy"
+                            alt="Icon" class="capabilities-data-icon"></div>
+                        <div class="capabilities-data-title">Data-Driven Logic</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="process-section" class="section">
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="process-layout">
+              <div data-w-id="395d6d59-9f67-aa2c-bce8-89f35397477c" id="answer-4"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="heading-layout">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">004</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer</div>
+                  </div>
+                </div>
+                <div class="heading-wrap">
+                  <h2 class="heading-style-h2">Architecting Quality at Scale</h2>
+                  <p class="subheading-text">A systematic leadership framework designed to manage multiple high-stakes
+                    creative projects simultaneously — with precision and brand-first strategy.</p>
+                </div>
+              </div>
+              <div data-w-id="395d6d59-9f67-aa2c-bce8-89f353974783"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="process-main">
+                <div class="process-item active">
+                  <div id="w-node-_16d5cbb8-90e2-ed9a-972b-748b46ef21b6-7dad0561" class="process-item-block">
+                    <div class="process-item-number-wrap">
+                      <div class="process-item-icon-frame active">
+                        <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M29.6991 32.8345C29.5503 31.0109 31.0596 29.4884 32.8675 29.6385C33.1809 29.6645 33.5562 29.7786 33.9384 29.8948C33.9752 29.9059 34.0121 29.9172 34.049 29.9283C34.0823 29.9384 34.1157 29.9484 34.149 29.9584C34.5002 30.064 34.8496 30.169 35.1153 30.3126C36.6407 31.1365 37.1331 33.1053 36.1777 34.5606C36.0113 34.8141 35.7532 35.0737 35.4936 35.3347C35.469 35.3595 35.4444 35.3843 35.4198 35.4091C35.3952 35.4339 35.3706 35.4588 35.3461 35.4836C35.0873 35.7454 34.8299 36.0058 34.5786 36.1737C33.1359 37.1374 31.1841 36.6407 30.3673 35.1019C30.225 34.8339 30.1209 34.4815 30.0162 34.1272C30.0063 34.0936 29.9963 34.06 29.9864 34.0264C29.9753 33.9891 29.9642 33.9519 29.9531 33.9148C29.8379 33.5293 29.7249 33.1507 29.6991 32.8345Z"
+                              fill="currentColor"></path>
+                            <path
+                              d="M33.5463 18.5717C33.5463 26.9875 26.7829 33.8098 18.4398 33.8098C10.0967 33.8098 3.33331 26.9875 3.33331 18.5717C3.33331 10.1559 10.0967 3.3335 18.4398 3.3335C26.7829 3.3335 33.5463 10.1559 33.5463 18.5717Z"
+                              fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="process-item-number active">01</div>
+                    </div>
+                  </div>
+                  <div class="process-item-center">
+                    <div class="process-dot active">
+                      <div class="process-dot-inner active">
+                        <div class="process-dot-dot active"></div>
+                      </div>
+                    </div>
+                    <div class="process-item process-line-hide-top active"></div>
+                  </div>
+                  <div class="process-item-block">
+                    <div class="process-item-content">
+                      <div class="process-item-title">Strategic Intake &amp; Filter</div>
+                      <div class="process-item-desc">Managing 10+ concurrent projects begins with acting as the primary
+                        strategic filter. I audit every incoming brief to align client business goals with our technical
+                        capacity, ensuring that the creative &#x27;North Star&#x27; is locked before a single designer
+                        starts</div>
+                    </div>
+                  </div>
+                </div>
+                <div process-item="02" class="process-item">
+                  <div class="process-item-block align-right">
+                    <div class="process-item-content">
+                      <div class="process-item-title">The Creative Operating System</div>
+                      <div class="process-item-desc">I design a customized &#x27;Creative Blueprint&#x27; for each
+                        project. By establishing strict typographic scales, moodboards, and UI guidelines early, I
+                        provide the team with a framework that ensures brand consistency without the need for constant
+                        micromanagement.</div>
+                    </div>
+                  </div>
+                  <div class="process-item-center">
+                    <div class="process-dot">
+                      <div class="process-dot-inner">
+                        <div class="process-dot-dot"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-_963e5ecd-d63b-d5ca-b437-f52113390605-7dad0561" class="process-item-block">
+                    <div class="process-item-number-wrap">
+                      <div class="process-item-number">02</div>
+                      <div class="process-item-icon-frame">
+                        <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13.1782 7.09302C12.6265 4.93166 10.6665 3.3335 8.33331 3.3335C5.57189 3.3335 3.33331 5.57207 3.33331 8.3335C3.33331 10.6667 4.93147 12.6267 7.09284 13.1784C7.08655 13.2292 7.08331 13.281 7.08331 13.3335V26.6668C7.08331 26.7193 7.08656 26.7711 7.09284 26.8219C4.93148 27.3736 3.33331 29.3336 3.33331 31.6668C3.33331 34.4283 5.57189 36.6668 8.33331 36.6668C10.6665 36.6668 12.6265 35.0687 13.1782 32.9073C13.229 32.9136 13.2808 32.9168 13.3333 32.9168H26.6666C26.7192 32.9168 26.7709 32.9136 26.8217 32.9073C27.3735 35.0687 29.3334 36.6668 31.6666 36.6668C34.4281 36.6668 36.6666 34.4283 36.6666 31.6668C36.6666 29.3336 35.0685 27.3736 32.9071 26.8219C32.9134 26.7711 32.9166 26.7193 32.9166 26.6668V13.3335C32.9166 13.281 32.9134 13.2292 32.9071 13.1784C35.0685 12.6267 36.6666 10.6667 36.6666 8.3335C36.6666 5.57207 34.4281 3.3335 31.6666 3.3335C29.3334 3.3335 27.3735 4.93166 26.8217 7.09303C26.7709 7.08674 26.7192 7.0835 26.6666 7.0835H13.3333C13.2808 7.0835 13.229 7.08674 13.1782 7.09302ZM9.57379 13.1784C9.58007 13.2292 9.58331 13.281 9.58331 13.3335L9.58331 26.6668C9.58331 26.7193 9.58007 26.7711 9.57378 26.8219C11.3385 27.2724 12.7278 28.6616 13.1782 30.4264C13.229 30.4201 13.2808 30.4168 13.3333 30.4168H26.6666C26.7192 30.4168 26.7709 30.4201 26.8217 30.4264C27.2722 28.6616 28.6615 27.2724 30.4262 26.8219C30.4199 26.7711 30.4166 26.7193 30.4166 26.6668V13.3335C30.4166 13.281 30.4199 13.2292 30.4262 13.1784C28.6615 12.7279 27.2722 11.3387 26.8217 9.57397C26.7709 9.58025 26.7192 9.5835 26.6666 9.5835H13.3333C13.2808 9.5835 13.229 9.58026 13.1782 9.57397C12.7278 11.3387 11.3385 12.7279 9.57379 13.1784Z"
+                              fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div process-item="03" class="process-item">
+                  <div id="w-node-daf4e221-5cd3-9e30-2a3a-cea951a2eba7-7dad0561" class="process-item-block">
+                    <div class="process-item-number-wrap">
+                      <div class="process-item-icon-frame">
+                        <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M23.798 3.58723C23.1808 3.3335 22.3983 3.3335 20.8333 3.3335C19.2684 3.3335 18.4859 3.3335 17.8687 3.58723C17.0457 3.92554 16.3918 4.57446 16.0509 5.39122C15.8953 5.76406 15.8344 6.19766 15.8106 6.83015C15.7756 7.75963 15.2953 8.61999 14.4836 9.08505C13.672 9.5501 12.6811 9.53273 11.8525 9.09809C11.2886 8.80233 10.8798 8.63787 10.4766 8.58519C9.59348 8.4698 8.7003 8.70732 7.99359 9.2455C7.46356 9.64913 7.07232 10.3217 6.28984 11.6667C5.50736 13.0118 5.11612 13.6843 5.02891 14.3417C4.91264 15.2182 5.15197 16.1046 5.69424 16.806C5.94176 17.1261 6.28962 17.3952 6.82951 17.7319C7.62319 18.2268 8.13387 19.0699 8.13382 20.0002C8.13377 20.9304 7.62311 21.7734 6.8295 22.2682C6.28953 22.605 5.94162 22.8741 5.69408 23.1943C5.1518 23.8956 4.91248 24.782 5.02875 25.6585C5.11595 26.3159 5.50719 26.9884 6.28967 28.3335C7.07216 29.6786 7.4634 30.3511 7.99343 30.7547C8.70014 31.2929 9.59332 31.5304 10.4765 31.415C10.8796 31.3623 11.2884 31.1979 11.8522 30.9022C12.6809 30.4675 13.6718 30.4501 14.4835 30.9152C15.2952 31.3803 15.7756 32.2407 15.8106 33.1703C15.8344 33.8027 15.8953 34.2363 16.0509 34.6091C16.3918 35.4259 17.0457 36.0748 17.8687 36.4131C18.4859 36.6668 19.2684 36.6668 20.8333 36.6668C22.3983 36.6668 23.1808 36.6668 23.798 36.4131C24.621 36.0748 25.2748 35.4259 25.6157 34.6091C25.7714 34.2362 25.8323 33.8026 25.8561 33.1701C25.8911 32.2407 26.3714 31.3803 27.183 30.9152C27.9947 30.4501 28.9857 30.4674 29.8143 30.9021C30.3781 31.1978 30.7869 31.3622 31.19 31.4149C32.0732 31.5303 32.9664 31.2928 33.6731 30.7546C34.2031 30.351 34.5943 29.6784 35.3768 28.3334C36.1593 26.9883 36.5506 26.3158 36.6378 25.6584C36.754 24.7819 36.5147 23.8955 35.9724 23.1941C35.7249 22.874 35.377 22.6049 34.8371 22.2682C34.0434 21.7733 33.5328 20.9302 33.5328 20C33.5329 19.0699 34.0435 18.227 34.8371 17.7321C35.3771 17.3954 35.725 17.1263 35.9726 16.8061C36.5149 16.1047 36.7542 15.2183 36.6379 14.3418C36.5507 13.6844 36.1595 13.0119 35.377 11.6668C34.5945 10.3218 34.2033 9.64924 33.6732 9.24561C32.9665 8.70743 32.0733 8.46991 31.1902 8.5853C30.787 8.63798 30.3782 8.80242 29.8144 9.09816C28.9858 9.53282 27.9948 9.55019 27.1831 9.0851C26.3714 8.62001 25.8911 7.7596 25.8561 6.83006C25.8322 6.19762 25.7713 5.76405 25.6157 5.39122C25.2748 4.57446 24.621 3.92554 23.798 3.58723ZM20.8333 25.0002C23.6158 25.0002 25.8714 22.7616 25.8714 20.0002C25.8714 17.2387 23.6158 15.0002 20.8333 15.0002C18.0509 15.0002 15.7953 17.2387 15.7953 20.0002C15.7953 22.7616 18.0509 25.0002 20.8333 25.0002Z"
+                              fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="process-item-number">03</div>
+                    </div>
+                  </div>
+                  <div class="process-item-center">
+                    <div class="process-dot">
+                      <div class="process-dot-inner">
+                        <div class="process-dot-dot"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="process-item-block">
+                    <div class="process-item-content">
+                      <div class="process-item-title">Multidisciplinary Integration</div>
+                      <div class="process-item-desc">As the bridge between design and development, I oversee the
+                        high-fidelity build phase. Whether it&#x27;s Photoshop for graphics or Next.js for web, I ensure
+                        the technical architecture supports the creative vision, maintaining the &#x27;premium&#x27;
+                        feel across all platforms.</div>
+                    </div>
+                  </div>
+                </div>
+                <div process-item="04" class="process-item">
+                  <div class="process-item-block align-right">
+                    <div class="process-item-content">
+                      <div class="process-item-title">Internal Quality Gates</div>
+                      <div class="process-item-desc">I implement mandatory &#x27;Review Gates&#x27; at critical
+                        milestones. We audit work for performance, pixel-perfection, and commercial impact. By catching
+                        weak creative work early in this stage, we maintain an 80% first-pass approval rate from our
+                        clients.</div>
+                    </div>
+                  </div>
+                  <div class="process-item-center">
+                    <div class="process-dot">
+                      <div class="process-dot-inner">
+                        <div class="process-dot-dot"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="w-node-_966d011b-a1d6-7b3f-d74d-2107b8b500b4-7dad0561" class="process-item-block">
+                    <div class="process-item-number-wrap">
+                      <div class="process-item-number">04</div>
+                      <div class="process-item-icon-frame">
+                        <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M3.33331 20.0002C3.33331 10.7954 10.7952 3.3335 20 3.3335C29.2047 3.3335 36.6666 10.7954 36.6666 20.0002C36.6666 29.2049 29.2047 36.6668 20 36.6668C10.7952 36.6668 3.33331 29.2049 3.33331 20.0002ZM18.75 8.3335C18.75 7.64314 19.3096 7.0835 20 7.0835C27.1337 7.0835 32.9166 12.8665 32.9166 20.0002C32.9166 27.1338 27.1337 32.9168 20 32.9168C12.8663 32.9168 7.08331 27.1338 7.08331 20.0002C7.08331 19.3098 7.64296 18.7502 8.33331 18.7502C9.02367 18.7502 9.58331 19.3098 9.58331 20.0002C9.58331 25.7531 14.247 30.4168 20 30.4168C25.7529 30.4168 30.4166 25.7531 30.4166 20.0002C30.4166 14.2472 25.7529 9.5835 20 9.5835C19.3096 9.5835 18.75 9.02385 18.75 8.3335ZM20 12.0835C19.3096 12.0835 18.75 12.6431 18.75 13.3335C18.75 14.0239 19.3096 14.5835 20 14.5835C22.9915 14.5835 25.4166 17.0086 25.4166 20.0002C25.4166 22.9917 22.9915 25.4168 20 25.4168C19.3096 25.4168 18.75 25.9765 18.75 26.6668C18.75 27.3572 19.3096 27.9168 20 27.9168C24.3722 27.9168 27.9166 24.3724 27.9166 20.0002C27.9166 15.6279 24.3722 12.0835 20 12.0835Z"
+                              fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div process-item="05" class="process-item">
+                  <div id="w-node-a2477e31-06bd-4257-a9c5-486a905abff2-7dad0561" class="process-item-block">
+                    <div class="process-item-number-wrap">
+                      <div class="process-item-icon-frame">
+                        <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                            height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                            aria-hidden="true" role="img">
+                            <path
+                              d="M15.0571 9.93858L10.8186 14.1644C10.0395 14.9412 9.32478 15.6537 8.76038 16.2978C8.39794 16.7114 8.03573 17.1641 7.72893 17.6643L7.68763 17.6232C7.60924 17.545 7.56999 17.5059 7.53063 17.4677C6.79391 16.7529 5.92733 16.1845 4.97724 15.7931C4.92647 15.7722 4.87494 15.7517 4.77189 15.7109L4.1408 15.4608C3.28587 15.1221 3.05802 14.0215 3.70855 13.3729C5.57556 11.5116 7.81718 9.27673 8.89899 8.82787C9.85307 8.43201 10.8837 8.30029 11.8777 8.44719C12.7885 8.58179 13.6501 9.04962 15.0571 9.93858Z"
+                              fill="currentColor"></path>
+                            <path
+                              d="M22.2945 32.1888C22.636 32.5354 22.8629 32.7803 23.0679 33.0419C23.3385 33.3872 23.5804 33.7539 23.7913 34.1384C24.0287 34.5712 24.213 35.0335 24.5816 35.9582C24.8817 36.7109 25.8786 36.9099 26.4576 36.3326L26.5976 36.193C28.4646 34.3316 30.7062 32.0967 31.1564 31.0181C31.5534 30.0669 31.6855 29.0394 31.5382 28.0483C31.4032 27.1404 30.9341 26.2815 30.0427 24.879L25.7899 29.119C24.9932 29.9134 24.2626 30.6418 23.6019 31.2124C23.206 31.5543 22.7728 31.8961 22.2945 32.1888Z"
+                              fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M24.0778 27.2951L33.8225 17.5795C35.2259 16.1804 35.9276 15.4808 36.2972 14.5911C36.6668 13.7015 36.6668 12.7121 36.6668 10.7334V9.78812C36.6668 6.74538 36.6668 5.22401 35.7187 4.27875C34.7706 3.3335 33.2447 3.3335 30.1928 3.3335H29.2447C27.26 3.3335 26.2676 3.3335 25.3753 3.70199C24.483 4.07049 23.7813 4.77008 22.3779 6.16926L12.6332 15.8848C10.9933 17.5197 9.97649 18.5335 9.58275 19.5126C9.45834 19.822 9.39614 20.1279 9.39614 20.4489C9.39614 21.7857 10.4751 22.8615 12.6332 25.013L12.9232 25.3022L16.3207 21.854C16.8053 21.3622 17.5967 21.3564 18.0884 21.8409C18.5802 22.3254 18.5861 23.1168 18.1015 23.6086L14.6936 27.0673L14.9221 27.2951C17.0801 29.4466 18.1591 30.5224 19.4999 30.5224C19.7962 30.5224 20.0796 30.4699 20.3648 30.3648C21.3702 29.9945 22.3966 28.9712 24.0778 27.2951ZM28.6558 15.8855C27.3917 17.1458 25.3421 17.1458 24.078 15.8855C22.8138 14.6252 22.8138 12.5817 24.078 11.3214C25.3421 10.0611 27.3917 10.0611 28.6558 11.3214C29.9199 12.5817 29.9199 14.6252 28.6558 15.8855Z"
+                              fill="currentColor"></path>
+                          </svg></div>
+                      </div>
+                      <div class="process-item-number">05</div>
+                    </div>
+                  </div>
+                  <div class="process-item-center">
+                    <div class="process-dot">
+                      <div class="process-dot-inner">
+                        <div class="process-dot-dot"></div>
+                      </div>
+                    </div>
+                    <div class="process-item process-line-hide-bottom"></div>
+                  </div>
+                  <div class="process-item-block">
+                    <div class="process-item-content">
+                      <div class="process-item-title">Systematic Deployment</div>
+                      <div class="process-item-desc">Post-launch, I lead the optimization phase—analyzing user
+                        engagement to refine the creative output, ensuring that our work at The Minds Studio delivers
+                        measurable growth.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="process-line-ray">
+                  <div class="process-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project-section" class="section casestudy">
+        <div class="padding-global">
+          <div class="container-base">
+            <div class="value-layout">
+              <div data-w-id="950851cb-a61f-a9d3-5520-678d91591e87" id="answer-5"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="heading-layout">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">005</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer<br></div>
+                  </div>
+                </div>
+                <div class="heading-wrap">
+                  <h2 class="heading-style-h2">Strategic Mentorship</h2>
+                  <p class="subheading-text">Transitioning from Aesthetic Design to Outcome-Driven Creativity<br><br>I
+                    once led a senior designer who produced visually stunning, high-aesthetic work that consistently
+                    failed to perform. The designs looked like award-winning art but lacked the strategic
+                    &#x27;hooks&#x27; needed to drive user action. I identified that the breakdown wasn&#x27;t in his
+                    craft, but in his <strong>pre-design logic<br><br>I introduced him to my &#x27;WHO-FEEL-DO&#x27;
+                      framework to anchor his creativity in psychology rather than just trends. I paused the project and
+                      walked him through three critical pillars:</strong></p>
+                </div>
+              </div>
+              <div data-w-id="950851cb-a61f-a9d3-5520-678d91591e91"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="value-bottom">
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path
+                                d="M27.4055 44.0403C27.4179 43.7474 27.9032 43.631 28.0471 43.8865C28.7226 45.0857 29.875 46.8493 31.1826 47.6512C32.4902 48.4531 34.5846 48.6806 35.9597 48.739C36.2527 48.7514 36.369 49.2367 36.1136 49.3806C34.9144 50.0561 33.1508 51.2085 32.3489 52.5161C31.547 53.8237 31.3195 55.9181 31.2611 57.2932C31.2486 57.5862 30.7634 57.7025 30.6195 57.4471C29.944 56.2479 28.7916 54.4843 27.484 53.6823C26.1763 52.8804 24.0819 52.653 22.7068 52.5946C22.4139 52.5821 22.2975 52.0969 22.553 51.953C23.7522 51.2775 25.5158 50.1251 26.3177 48.8175C27.1196 47.5098 27.3471 45.4154 27.4055 44.0403Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M49.3123 41.3734C49.2897 41.081 48.7781 40.9584 48.6255 41.2087C48.166 41.9621 47.5034 42.8713 46.767 43.3229C46.0305 43.7746 44.9197 43.9529 44.0399 44.0209C43.7475 44.0434 43.6249 44.555 43.8752 44.7077C44.6286 45.1671 45.5378 45.8297 45.9894 46.5662C46.4411 47.3027 46.6194 48.4135 46.6874 49.2933C46.7099 49.5856 47.2215 49.7083 47.3742 49.4579C47.8336 48.7046 48.4962 47.7954 49.2327 47.3437C49.9692 46.8921 51.08 46.7138 51.9598 46.6458C52.2521 46.6232 52.3748 46.1116 52.1245 45.959C51.3711 45.4995 50.4619 44.8369 50.0102 44.1005C49.5586 43.364 49.3803 42.2532 49.3123 41.3734Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M39.2098 10.6714L38.5636 9.85521C36.0659 6.70035 34.817 5.12292 33.3641 5.35578C31.9112 5.58864 31.2165 7.47758 29.827 11.2555L29.4675 12.2329C29.0727 13.3064 28.8753 13.8432 28.4967 14.2372C28.118 14.6311 27.601 14.8377 26.5671 15.2509L25.6258 15.627L24.9648 15.8915C21.7661 17.1748 20.1543 17.9021 19.9485 19.3152C19.729 20.8226 21.2546 22.112 24.3058 24.691L25.0952 25.3582C25.9623 26.091 26.3958 26.4575 26.6443 26.9569C26.8928 27.4564 26.9282 28.0323 26.999 29.1842L27.0634 30.2328C27.3124 34.2863 27.4369 36.313 28.7541 37.0117C30.0714 37.7104 31.709 36.6184 34.9841 34.4344L34.9842 34.4344L35.8315 33.8694C36.7622 33.2488 37.2276 32.9384 37.7598 32.8531C38.2921 32.7678 38.8309 32.9172 39.9086 33.2159L40.8897 33.4879C44.6821 34.5392 46.5783 35.0648 47.6119 33.9893C48.6455 32.9138 48.132 30.9494 47.105 27.0207L46.8393 26.0043C46.5475 24.8878 46.4015 24.3296 46.4819 23.7774C46.5624 23.2253 46.86 22.7417 47.4553 21.7745L47.4553 21.7744L47.9972 20.8938C50.0921 17.4901 51.1395 15.7883 50.4611 14.4248C49.7826 13.0614 47.8276 12.9394 43.9177 12.6953L42.9061 12.6321C41.7951 12.5628 41.2395 12.5281 40.757 12.2721C40.2745 12.0162 39.9196 11.5679 39.2098 10.6714L39.2098 10.6714Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M23.5594 35.5367C17.8599 38.3212 13.1175 42.7313 11.3285 48.0012C9.32171 35.4477 12.1054 27.3411 16.5676 22.3027C16.9521 23.0887 17.4518 23.7393 17.9006 24.2478C18.8336 25.305 20.1732 26.4366 21.5333 27.5856L22.512 28.4128C22.6976 28.5696 22.8419 28.6917 22.9646 28.7976C22.9771 28.9692 22.9895 29.1695 23.0054 29.4291L23.0849 30.7237C23.1918 32.4703 23.2962 34.1754 23.5594 35.5367Z"
+                                fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">01</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">WHO</div>
+                    <div class="value-card-desc">During the LuvEsence VR development, high-fidelity city geometry hit a
+                      technical bottleneck on standalone hardware. A &#x27;choppy&#x27; frame rate was threatening the
+                      premium brand perception.</div>
+                  </div>
+                </div>
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M40.1952 37.7795L52.1706 25.8401C53.8953 24.1207 54.7576 23.2609 55.2118 22.1677C55.666 21.0744 55.666 19.8586 55.666 17.427V16.2653C55.666 12.5261 55.666 10.6565 54.5009 9.49487C53.3357 8.33325 51.4605 8.33325 47.71 8.33325H46.5449C44.1059 8.33325 42.8863 8.33325 41.7898 8.7861C40.6932 9.23894 39.8309 10.0987 38.1063 11.8181L26.1308 23.7575C24.1156 25.7666 22.866 27.0124 22.3822 28.2157C22.2293 28.5959 22.1528 28.9718 22.1528 29.3663C22.1528 31.009 23.4788 32.3311 26.1308 34.9751L26.4873 35.3304L30.6625 31.0929C31.258 30.4886 32.2306 30.4814 32.8349 31.0769C33.4392 31.6723 33.4464 32.6449 32.851 33.2492L28.663 37.4996L28.9437 37.7795C31.5957 40.4235 32.9217 41.7455 34.5695 41.7455C34.9335 41.7455 35.2819 41.681 35.6323 41.5519C36.8679 41.0968 38.1292 39.8393 40.1952 37.7795ZM45.8212 23.7583C44.2677 25.3072 41.749 25.3072 40.1955 23.7583C38.6419 22.2095 38.6419 19.6984 40.1955 18.1495C41.749 16.6007 44.2677 16.6007 45.8212 18.1495C47.3747 19.6984 47.3747 22.2095 45.8212 23.7583Z"
+                                fill="currentColor"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.89003 33.2889C10.5954 33.9951 10.5947 35.1394 9.88847 35.8447L9.51789 36.2148C9.20134 36.531 9.20134 37.0427 9.51789 37.3589C9.83565 37.6762 10.3518 37.6762 10.6695 37.3589L14.746 33.2874C15.4522 32.582 16.5965 32.5827 17.3018 33.2889C18.0072 33.9951 18.0065 35.1394 17.3003 35.8447L13.2238 39.9162C11.4948 41.643 8.69258 41.643 6.96363 39.9162C5.23348 38.1882 5.23348 35.3855 6.96363 33.6575L7.33422 33.2874C8.04042 32.582 9.18469 32.5827 9.89003 33.2889ZM20.6593 43.3236C21.3572 44.0372 21.3445 45.1814 20.6309 45.8793L16.5114 49.908C15.7979 50.6058 14.6537 50.5931 13.9558 49.8795C13.2579 49.166 13.2707 48.0218 13.9842 47.3239L18.1037 43.2952C18.8173 42.5973 19.9615 42.6101 20.6593 43.3236ZM30.6211 46.7095C31.3264 47.4157 31.3257 48.56 30.6195 49.2653L26.543 53.3368C26.2265 53.6529 26.2265 54.1646 26.543 54.4808C26.8608 54.7982 27.3769 54.7982 27.6947 54.4808L28.0652 54.1107C28.7714 53.4053 29.9157 53.406 30.6211 54.1122C31.3264 54.8184 31.3257 55.9627 30.6195 56.668L30.2489 57.0381C28.52 58.765 25.7177 58.765 23.9888 57.0381C22.2586 55.3101 22.2586 52.5075 23.9888 50.7794L28.0652 46.708C28.7714 46.0026 29.9157 46.0033 30.6211 46.7095Z"
+                                fill="currentColor"></path>
+                              <g opacity="0.5">
+                                <path
+                                  d="M29.1105 16.4506L23.9017 21.6437C22.9442 22.5983 22.066 23.4738 21.3724 24.2654C20.927 24.7737 20.4818 25.33 20.1048 25.9448L20.0541 25.8942C19.9577 25.7981 19.9095 25.75 19.8611 25.7031C18.9558 24.8246 17.8908 24.1262 16.7232 23.6452C16.6609 23.6195 16.5975 23.5944 16.4709 23.5442L15.6953 23.2369C14.6447 22.8206 14.3647 21.4681 15.1641 20.6711C17.4585 18.3836 20.2133 15.6373 21.5427 15.0857C22.7152 14.5992 23.9817 14.4373 25.2033 14.6179C26.3226 14.7833 27.3814 15.3582 29.1105 16.4506Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M38.0045 43.7937C38.4243 44.2197 38.7031 44.5207 38.955 44.8422C39.2876 45.2665 39.5849 45.7171 39.844 46.1896C40.1358 46.7215 40.3623 47.2896 40.8153 48.426C41.184 49.351 42.4091 49.5955 43.1206 48.8861L43.2928 48.7145C45.5871 46.427 48.3417 43.6806 48.895 42.3551C49.383 41.1862 49.5453 39.9234 49.3642 38.7056C49.1984 37.5898 48.6218 36.5343 47.5264 34.8108L42.3002 40.0213C41.321 40.9975 40.4232 41.8926 39.6113 42.5939C39.1247 43.0141 38.5923 43.4341 38.0045 43.7937Z"
+                                  fill="currentColor"></path>
+                              </g>
+                              <g opacity="0.5">
+                                <path
+                                  d="M21.5876 38.246C22.2934 37.5402 22.2934 36.396 21.5876 35.6902C20.8818 34.9844 19.7376 34.9844 19.0318 35.6902L13.9308 40.7911C13.225 41.4969 13.225 42.6411 13.9308 43.3469C14.6366 44.0527 15.7809 44.0527 16.4866 43.3469L21.5876 38.246Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M28.2761 44.9262C28.9818 44.2205 28.9818 43.0762 28.2761 42.3705C27.5703 41.6647 26.426 41.6647 25.7202 42.3705L20.6542 47.4365C19.9484 48.1422 19.9484 49.2865 20.6542 49.9923C21.3599 50.698 22.5042 50.698 23.21 49.9923L28.2761 44.9262Z"
+                                  fill="currentColor"></path>
+                              </g>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">02</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">FEEL</div>
+                    <div class="value-card-desc">I identified the weak link early and pivoted the strategy: I directed
+                      the team to strip the generic city and <strong>architect the world using oversized, high-fidelity
+                        product assets.</strong></div>
+                  </div>
+                </div>
+                <div class="value-card">
+                  <div class="value-card-top">
+                    <div class="value-icon-l2">
+                      <div class="value-icon-l1">
+                        <div class="value-icon-frame">
+                          <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                              height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                              aria-hidden="true" role="img">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M45.1999 9.80005C46.194 9.80005 46.9999 10.6059 46.9999 11.6V17H52.3999C53.394 17 54.1999 17.8059 54.1999 18.8C54.1999 19.7941 53.394 20.6 52.3999 20.6H46.9999V26C46.9999 26.9941 46.194 27.8 45.1999 27.8C44.2058 27.8 43.3999 26.9941 43.3999 26V20.6H37.9999C37.0058 20.6 36.2 19.7941 36.2 18.8C36.2 17.8059 37.0058 17 37.9999 17H43.3999V11.6C43.3999 10.6059 44.2058 9.80005 45.1999 9.80005Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M8 18.8C8 13.7088 8 11.1632 9.58162 9.58162C11.1632 8 13.7088 8 18.8 8C23.8911 8 26.4367 8 28.0183 9.58162C29.6 11.1632 29.6 13.7088 29.6 18.8C29.6 23.8911 29.6 26.4367 28.0183 28.0183C26.4367 29.6 23.8911 29.6 18.8 29.6C13.7088 29.6 11.1632 29.6 9.58162 28.0183C8 26.4367 8 23.8911 8 18.8Z"
+                                fill="currentColor"></path>
+                              <path
+                                d="M34.4 45.1999C34.4 40.1087 34.4 37.5631 35.9816 35.9815C37.5633 34.3999 40.1088 34.3999 45.2 34.3999C50.2912 34.3999 52.8367 34.3999 54.4184 35.9815C56 37.5631 56 40.1087 56 45.1999C56 50.291 56 52.8366 54.4184 54.4182C52.8367 55.9999 50.2912 55.9999 45.2 55.9999C40.1088 55.9999 37.5633 55.9999 35.9816 54.4182C34.4 52.8366 34.4 50.291 34.4 45.1999Z"
+                                fill="currentColor"></path>
+                              <path opacity="0.5"
+                                d="M8 45.1999C8 40.1087 8 37.5631 9.58162 35.9815C11.1632 34.3999 13.7088 34.3999 18.8 34.3999C23.8911 34.3999 26.4367 34.3999 28.0183 35.9815C29.6 37.5631 29.6 40.1087 29.6 45.1999C29.6 50.291 29.6 52.8366 28.0183 54.4182C26.4367 55.9999 23.8911 55.9999 18.8 55.9999C13.7088 55.9999 11.1632 55.9999 9.58162 54.4182C8 52.8366 8 50.291 8 45.1999Z"
+                                fill="currentColor"></path>
+                            </svg></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="value-card-number">03</div>
+                  </div>
+                  <div class="value-card-bottom">
+                    <div class="value-card-title">DO</div>
+                    <div class="value-card-desc">The result was a high-performance, seamless experience where the brand
+                      was the literal hero of every frame. We turned a technical limitation into an unforgettable
+                      marketing asset.</div>
+                  </div>
+                </div>
+              </div>
+              <p class="subheading-text"><strong>RESULTS</strong><br><br>The transformation was immediate. The designer
+                began curating his aesthetics to cater to the <strong>WHO-FEEL-DO</strong> roadmap. This shift resulted
+                in a <strong>40% increase in click-through rates</strong> for that campaign. More importantly, it
+                permanently upgraded his workflow; he stopped designing for &#x27;the look&#x27; and started designing
+                for &#x27;the result.&#x27; It proved that my role as Creative Director is to provide the strategic
+                compass that makes great art perform.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing-section" class="section">
+        <div class="padding-global">
+          <div class="container-medium"></div>
+        </div>
+      </section>
+      <section id="answer-9" class="section team">
+        <div class="padding-global">
+          <div class="container-base"></div>
+        </div>
+      </section>
+      <section id="FAQ-section" class="section faq">
+        <div class="padding-global">
+          <div class="container-medium">
+            <div class="faqs-layout">
+              <div data-w-id="383e6e1a-ed2c-5004-d8a4-005f6e16d4d5" id="answer-6"
+                style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="heading-layout">
+                <div class="eye-brow">
+                  <div class="eye-brow-number">006</div>
+                  <div class="eye-brow-text-wrap">
+                    <div class="eye-brow-dot"></div>
+                    <div class="eye-brow-text">Answer</div>
+                  </div>
+                </div>
+                <div class="heading-wrap">
+                  <h2 class="heading-style-h2">The Four Noble Truths of Creative Leadership</h2>
+                </div>
+              </div>
+              <div class="faqs-main">
+                <div data-w-id="46cfe1dc-19b5-ddde-3d5c-46e71c28963c"
+                  style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="faq-list">
+                  <div class="faq-item">
+                    <div data-delay="0" data-hover="false" data-w-id="addd2d76-031c-7689-4d2e-2e8231e90913"
+                      class="faq-item-inner w-dropdown">
+                      <div class="faq-item-top w-dropdown-toggle">
+                        <div class="faq-item-question-wrap">
+                          <div class="faq-item-number">1</div>
+                          <div class="faq-item-question">Dukkha - The Acknowledgment: &quot;The standard is not being
+                            met.&quot;</div>
+                        </div>
+                        <div class="faq-item-icon">
+                          <div class="faq-item-icon-inner">
+                            <div class="faq-item-icon-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <g clip-path="url(#clip0_6234_3359)">
+                                  <path d="M12 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                  <clippath id="clip0_6234_3359">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                  </clippath>
+                                </defs>
+                              </svg></div>
+                          </div>
+                          <div class="faq-icon-bg-gradient"></div>
+                        </div>
+                      </div>
+                      <nav class="faq-item-bottom-wrap w-dropdown-list">
+                        <div class="faq-item-bottom">
+                          <div class="faq-item-answer">
+                            <p class="faq-item-answer-text">I recognize that consistent underperformance is a form of
+                              friction that affects the whole ecosystem—the client, the team, and the individual. I do
+                              not ignore the &quot;suffering&quot; of the project; I acknowledge that the current output
+                              is misaligned with our <strong>WHO-FEEL-DO</strong> framework and that a change is
+                              mandatory.</p>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="faq-item-bg-gradient"></div>
+                  </div>
+                  <div class="faq-item">
+                    <div data-delay="0" data-hover="false" data-w-id="addd2d76-031c-7689-4d2e-2e8231e90913"
+                      class="faq-item-inner w-dropdown">
+                      <div class="faq-item-top w-dropdown-toggle">
+                        <div class="faq-item-question-wrap">
+                          <div class="faq-item-number">2</div>
+                          <div class="faq-item-question">Samudaya - <em>The Diagnosis: &quot;Why is the gap
+                              persisting?&quot;</em></div>
+                        </div>
+                        <div class="faq-item-icon">
+                          <div class="faq-item-icon-inner">
+                            <div class="faq-item-icon-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <g clip-path="url(#clip0_6234_3359)">
+                                  <path d="M12 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                  <clippath id="clip0_6234_3359">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                  </clippath>
+                                </defs>
+                              </svg></div>
+                          </div>
+                          <div class="faq-icon-bg-gradient"></div>
+                        </div>
+                      </div>
+                      <nav class="faq-item-bottom-wrap w-dropdown-list">
+                        <div class="faq-item-bottom">
+                          <div class="faq-item-answer">
+                            <p class="faq-item-answer-text">I look for the root cause of the &quot;suffering.&quot; I
+                              analyze whether the failure stems from a <strong>Skill Gap</strong> (technical
+                              limitation), a <strong>Process Gap</strong> (vague briefing), or a <strong>Will
+                                Gap</strong> (lack of motivation). I use a one-on-one audit to determine if the
+                              individual is simply in the wrong role or if they are genuinely incapable of hitting the
+                              agency&#x27;s quality ceiling.</p>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="faq-item-bg-gradient"></div>
+                  </div>
+                  <div class="faq-item">
+                    <div data-delay="0" data-hover="false" data-w-id="addd2d76-031c-7689-4d2e-2e8231e90913"
+                      class="faq-item-inner w-dropdown">
+                      <div class="faq-item-top w-dropdown-toggle">
+                        <div class="faq-item-question-wrap">
+                          <div class="faq-item-number">3</div>
+                          <div class="faq-item-question">Nirodha - <em>The Vision: &quot;The standard must be
+                              restored.&quot;</em></div>
+                        </div>
+                        <div class="faq-item-icon">
+                          <div class="faq-item-icon-inner">
+                            <div class="faq-item-icon-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <g clip-path="url(#clip0_6234_3359)">
+                                  <path d="M12 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                  <clippath id="clip0_6234_3359">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                  </clippath>
+                                </defs>
+                              </svg></div>
+                          </div>
+                          <div class="faq-icon-bg-gradient"></div>
+                        </div>
+                      </div>
+                      <nav class="faq-item-bottom-wrap w-dropdown-list">
+                        <div class="faq-item-bottom">
+                          <div class="faq-item-answer">
+                            <p class="faq-item-answer-text">I establish that a resolution is possible. This involves
+                              setting a definitive &quot;Performance Sprint&quot;—a fixed timeline where the team member
+                              must hit specific, measurable quality gates. I visualize the end of the friction: either
+                              the individual evolves to meet the standard, or they are transitioned out to protect the
+                              team’s integrity.</p>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="faq-item-bg-gradient"></div>
+                  </div>
+                  <div class="faq-item">
+                    <div data-delay="0" data-hover="false" data-w-id="addd2d76-031c-7689-4d2e-2e8231e90913"
+                      class="faq-item-inner w-dropdown">
+                      <div class="faq-item-top w-dropdown-toggle">
+                        <div class="faq-item-question-wrap">
+                          <div class="faq-item-number">4</div>
+                          <div class="faq-item-question">Magga - The Execution: &quot;The Eightfold Path to
+                            Quality.&quot;</div>
+                        </div>
+                        <div class="faq-item-icon">
+                          <div class="faq-item-icon-inner">
+                            <div class="faq-item-icon-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <g clip-path="url(#clip0_6234_3359)">
+                                  <path d="M12 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                  <clippath id="clip0_6234_3359">
+                                    <rect width="24" height="24" fill="currentColor"></rect>
+                                  </clippath>
+                                </defs>
+                              </svg></div>
+                          </div>
+                          <div class="faq-icon-bg-gradient"></div>
+                        </div>
+                      </div>
+                      <nav class="faq-item-bottom-wrap w-dropdown-list">
+                        <div class="faq-item-bottom">
+                          <div class="faq-item-answer">
+                            <p class="faq-item-answer-text">I provide the roadmap for the transition. This
+                              includes:<br>‍<br>‍<strong>Right View:</strong> Ensuring they understand the commercial
+                              impact of their work.<br>‍<br>‍<strong>Right Effort:</strong> Providing specific technical
+                              mentorship and daily check-ins.<br>‍<br>‍<strong>Right Action:</strong> If the
+                              &quot;Performance Sprint&quot; fails, I make the decisive, non-emotional call to let them
+                              go.</p>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="faq-item-bg-gradient"></div>
+                  </div>
+                </div>
+                <div class="process-layout">
+                  <div data-w-id="d866780a-0d01-00f8-6b51-9e7a34a75a50" id="answer-7"
+                    style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                    class="heading-layout">
+                    <div class="eye-brow">
+                      <div class="eye-brow-number">007</div>
+                      <div class="eye-brow-text-wrap">
+                        <div class="eye-brow-dot"></div>
+                        <div class="eye-brow-text">Answer</div>
+                      </div>
+                    </div>
+                    <div class="heading-wrap">
+                      <h2 class="heading-style-h2">Engineering the Creative Pipeline</h2>
+                      <p class="subheading-text">A technical infrastructure designed to automate the &#x27;boring&#x27;
+                        parts of production, allowing for 100% focus on high-fidelity creative strategy.</p>
+                    </div>
+                  </div>
+                  <div data-w-id="d866780a-0d01-00f8-6b51-9e7a34a75a59"
+                    style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                    class="process-main">
+                    <div class="process-item active">
+                      <div id="w-node-d866780a-0d01-00f8-6b51-9e7a34a75a5b-7dad0561" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-icon-frame active">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M29.6991 32.8345C29.5503 31.0109 31.0596 29.4884 32.8675 29.6385C33.1809 29.6645 33.5562 29.7786 33.9384 29.8948C33.9752 29.9059 34.0121 29.9172 34.049 29.9283C34.0823 29.9384 34.1157 29.9484 34.149 29.9584C34.5002 30.064 34.8496 30.169 35.1153 30.3126C36.6407 31.1365 37.1331 33.1053 36.1777 34.5606C36.0113 34.8141 35.7532 35.0737 35.4936 35.3347C35.469 35.3595 35.4444 35.3843 35.4198 35.4091C35.3952 35.4339 35.3706 35.4588 35.3461 35.4836C35.0873 35.7454 34.8299 36.0058 34.5786 36.1737C33.1359 37.1374 31.1841 36.6407 30.3673 35.1019C30.225 34.8339 30.1209 34.4815 30.0162 34.1272C30.0063 34.0936 29.9963 34.06 29.9864 34.0264C29.9753 33.9891 29.9642 33.9519 29.9531 33.9148C29.8379 33.5293 29.7249 33.1507 29.6991 32.8345Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M33.5463 18.5717C33.5463 26.9875 26.7829 33.8098 18.4398 33.8098C10.0967 33.8098 3.33331 26.9875 3.33331 18.5717C3.33331 10.1559 10.0967 3.3335 18.4398 3.3335C26.7829 3.3335 33.5463 10.1559 33.5463 18.5717Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="process-item-number active">01</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot active">
+                          <div class="process-dot-inner active">
+                            <div class="process-dot-dot active"></div>
+                          </div>
+                        </div>
+                        <div class="process-item process-line-hide-top active"></div>
+                      </div>
+                      <div class="process-item-block">
+                        <div class="process-item-content">
+                          <div class="process-item-title">Modular Web Architecture</div>
+                          <div class="process-item-desc">I migrated our entire web development workflow to a
+                            <strong>Next.js &amp; Tailwind CSS boilerplate</strong>. By building a library of reusable,
+                            high-performance UI components, we reduced development time for client portfolios by
+                            <strong>70%</strong>, allowing us to focus on the &#x27;Creative Soul&#x27; of the site
+                            rather than the CSS plumbing.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="02" class="process-item">
+                      <div class="process-item-block align-right">
+                        <div class="process-item-content">
+                          <div class="process-item-title">3D Production Presets</div>
+                          <div class="process-item-desc">In our 3D work for brands like <strong>LuvEsence</strong>, I
+                            standardized our <strong>Blender-to-Unity workflow</strong>. I created a &#x27;Master
+                            Shader&#x27; library and cinematic lighting presets that mirrored our brand aesthetics,
+                            ensuring a consistent &#x27;Premium Feel&#x27; across different designers while cutting
+                            troubleshooting time by <strong>50%</strong>.</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w-node-d866780a-0d01-00f8-6b51-9e7a34a75a77-7dad0561" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-number">02</div>
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M13.1782 7.09302C12.6265 4.93166 10.6665 3.3335 8.33331 3.3335C5.57189 3.3335 3.33331 5.57207 3.33331 8.3335C3.33331 10.6667 4.93147 12.6267 7.09284 13.1784C7.08655 13.2292 7.08331 13.281 7.08331 13.3335V26.6668C7.08331 26.7193 7.08656 26.7711 7.09284 26.8219C4.93148 27.3736 3.33331 29.3336 3.33331 31.6668C3.33331 34.4283 5.57189 36.6668 8.33331 36.6668C10.6665 36.6668 12.6265 35.0687 13.1782 32.9073C13.229 32.9136 13.2808 32.9168 13.3333 32.9168H26.6666C26.7192 32.9168 26.7709 32.9136 26.8217 32.9073C27.3735 35.0687 29.3334 36.6668 31.6666 36.6668C34.4281 36.6668 36.6666 34.4283 36.6666 31.6668C36.6666 29.3336 35.0685 27.3736 32.9071 26.8219C32.9134 26.7711 32.9166 26.7193 32.9166 26.6668V13.3335C32.9166 13.281 32.9134 13.2292 32.9071 13.1784C35.0685 12.6267 36.6666 10.6667 36.6666 8.3335C36.6666 5.57207 34.4281 3.3335 31.6666 3.3335C29.3334 3.3335 27.3735 4.93166 26.8217 7.09303C26.7709 7.08674 26.7192 7.0835 26.6666 7.0835H13.3333C13.2808 7.0835 13.229 7.08674 13.1782 7.09302ZM9.57379 13.1784C9.58007 13.2292 9.58331 13.281 9.58331 13.3335L9.58331 26.6668C9.58331 26.7193 9.58007 26.7711 9.57378 26.8219C11.3385 27.2724 12.7278 28.6616 13.1782 30.4264C13.229 30.4201 13.2808 30.4168 13.3333 30.4168H26.6666C26.7192 30.4168 26.7709 30.4201 26.8217 30.4264C27.2722 28.6616 28.6615 27.2724 30.4262 26.8219C30.4199 26.7711 30.4166 26.7193 30.4166 26.6668V13.3335C30.4166 13.281 30.4199 13.2292 30.4262 13.1784C28.6615 12.7279 27.2722 11.3387 26.8217 9.57397C26.7709 9.58025 26.7192 9.5835 26.6666 9.5835H13.3333C13.2808 9.5835 13.229 9.58026 13.1782 9.57397C12.7278 11.3387 11.3385 12.7279 9.57379 13.1784Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="03" class="process-item">
+                      <div id="w-node-d866780a-0d01-00f8-6b51-9e7a34a75a7e-7dad0561" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M23.798 3.58723C23.1808 3.3335 22.3983 3.3335 20.8333 3.3335C19.2684 3.3335 18.4859 3.3335 17.8687 3.58723C17.0457 3.92554 16.3918 4.57446 16.0509 5.39122C15.8953 5.76406 15.8344 6.19766 15.8106 6.83015C15.7756 7.75963 15.2953 8.61999 14.4836 9.08505C13.672 9.5501 12.6811 9.53273 11.8525 9.09809C11.2886 8.80233 10.8798 8.63787 10.4766 8.58519C9.59348 8.4698 8.7003 8.70732 7.99359 9.2455C7.46356 9.64913 7.07232 10.3217 6.28984 11.6667C5.50736 13.0118 5.11612 13.6843 5.02891 14.3417C4.91264 15.2182 5.15197 16.1046 5.69424 16.806C5.94176 17.1261 6.28962 17.3952 6.82951 17.7319C7.62319 18.2268 8.13387 19.0699 8.13382 20.0002C8.13377 20.9304 7.62311 21.7734 6.8295 22.2682C6.28953 22.605 5.94162 22.8741 5.69408 23.1943C5.1518 23.8956 4.91248 24.782 5.02875 25.6585C5.11595 26.3159 5.50719 26.9884 6.28967 28.3335C7.07216 29.6786 7.4634 30.3511 7.99343 30.7547C8.70014 31.2929 9.59332 31.5304 10.4765 31.415C10.8796 31.3623 11.2884 31.1979 11.8522 30.9022C12.6809 30.4675 13.6718 30.4501 14.4835 30.9152C15.2952 31.3803 15.7756 32.2407 15.8106 33.1703C15.8344 33.8027 15.8953 34.2363 16.0509 34.6091C16.3918 35.4259 17.0457 36.0748 17.8687 36.4131C18.4859 36.6668 19.2684 36.6668 20.8333 36.6668C22.3983 36.6668 23.1808 36.6668 23.798 36.4131C24.621 36.0748 25.2748 35.4259 25.6157 34.6091C25.7714 34.2362 25.8323 33.8026 25.8561 33.1701C25.8911 32.2407 26.3714 31.3803 27.183 30.9152C27.9947 30.4501 28.9857 30.4674 29.8143 30.9021C30.3781 31.1978 30.7869 31.3622 31.19 31.4149C32.0732 31.5303 32.9664 31.2928 33.6731 30.7546C34.2031 30.351 34.5943 29.6784 35.3768 28.3334C36.1593 26.9883 36.5506 26.3158 36.6378 25.6584C36.754 24.7819 36.5147 23.8955 35.9724 23.1941C35.7249 22.874 35.377 22.6049 34.8371 22.2682C34.0434 21.7733 33.5328 20.9302 33.5328 20C33.5329 19.0699 34.0435 18.227 34.8371 17.7321C35.3771 17.3954 35.725 17.1263 35.9726 16.8061C36.5149 16.1047 36.7542 15.2183 36.6379 14.3418C36.5507 13.6844 36.1595 13.0119 35.377 11.6668C34.5945 10.3218 34.2033 9.64924 33.6732 9.24561C32.9665 8.70743 32.0733 8.46991 31.1902 8.5853C30.787 8.63798 30.3782 8.80242 29.8144 9.09816C28.9858 9.53282 27.9948 9.55019 27.1831 9.0851C26.3714 8.62001 25.8911 7.7596 25.8561 6.83006C25.8322 6.19762 25.7713 5.76405 25.6157 5.39122C25.2748 4.57446 24.621 3.92554 23.798 3.58723ZM20.8333 25.0002C23.6158 25.0002 25.8714 22.7616 25.8714 20.0002C25.8714 17.2387 23.6158 15.0002 20.8333 15.0002C18.0509 15.0002 15.7953 17.2387 15.7953 20.0002C15.7953 22.7616 18.0509 25.0002 20.8333 25.0002Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="process-item-number">03</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="process-item-block">
+                        <div class="process-item-content">
+                          <div class="process-item-title">Asset Library Systematization</div>
+                          <div class="process-item-desc">I established a centralized asset management system where every
+                            3D model, motion preset, and UI element is cataloged and accessible. This reclaimed roughly
+                            <strong>500+ hours annually</strong> by eliminating the need to recreate foundational
+                            elements for every new client brief.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="04" class="process-item">
+                      <div class="process-item-block align-right">
+                        <div class="process-item-content">
+                          <div class="process-item-title">High-Fidelity Deployment</div>
+                          <div class="process-item-desc">We utilize optimized VPS infrastructure not just for speed, but
+                            to ensure that <strong>heavy creative assets</strong>—like 4K motion sequences and 3D web
+                            elements—load instantly without compression artifacts. This &#x27;Performance-First&#x27;
+                            approach ensures that the brand’s premium aesthetic is never compromised by slow load times,
+                            allowing us to push high-impact creative updates in hours, not days.</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w-node-d866780a-0d01-00f8-6b51-9e7a34a75a99-7dad0561" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-number">04</div>
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3.33331 20.0002C3.33331 10.7954 10.7952 3.3335 20 3.3335C29.2047 3.3335 36.6666 10.7954 36.6666 20.0002C36.6666 29.2049 29.2047 36.6668 20 36.6668C10.7952 36.6668 3.33331 29.2049 3.33331 20.0002ZM18.75 8.3335C18.75 7.64314 19.3096 7.0835 20 7.0835C27.1337 7.0835 32.9166 12.8665 32.9166 20.0002C32.9166 27.1338 27.1337 32.9168 20 32.9168C12.8663 32.9168 7.08331 27.1338 7.08331 20.0002C7.08331 19.3098 7.64296 18.7502 8.33331 18.7502C9.02367 18.7502 9.58331 19.3098 9.58331 20.0002C9.58331 25.7531 14.247 30.4168 20 30.4168C25.7529 30.4168 30.4166 25.7531 30.4166 20.0002C30.4166 14.2472 25.7529 9.5835 20 9.5835C19.3096 9.5835 18.75 9.02385 18.75 8.3335ZM20 12.0835C19.3096 12.0835 18.75 12.6431 18.75 13.3335C18.75 14.0239 19.3096 14.5835 20 14.5835C22.9915 14.5835 25.4166 17.0086 25.4166 20.0002C25.4166 22.9917 22.9915 25.4168 20 25.4168C19.3096 25.4168 18.75 25.9765 18.75 26.6668C18.75 27.3572 19.3096 27.9168 20 27.9168C24.3722 27.9168 27.9166 24.3724 27.9166 20.0002C27.9166 15.6279 24.3722 12.0835 20 12.0835Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-line-ray">
+                      <div class="process-line"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-layout">
+                <div data-w-id="c62a6ae5-aa68-88a7-6afb-206b88ee7b44" id="answer-8"
+                  style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="about-top">
+                  <div class="eye-brow">
+                    <div class="eye-brow-number">008</div>
+                    <div class="eye-brow-text-wrap">
+                      <div class="eye-brow-dot"></div>
+                      <div class="eye-brow-text">Answer</div>
+                    </div>
+                  </div>
+                  <h2 class="heading-style-h2">&quot;The Integrated Director&quot;</h2>
+                  <div class="about-text">I leverage a multidisciplinary background in <strong>VR, Web, and
+                      Motion</strong> to eliminate the friction between a brand’s vision and its technical execution. By
+                    acting as the <strong>strategic bridge</strong> between creative concept and final deployment, I
+                    ensure that high-level branding isn&#x27;t just an idea, but a high-performance reality. My
+                    direction synchronizes diverse specialists, translating <strong>emotive design</strong> into
+                    <strong>functional code</strong>—to create a unified brand narrative across all touchpoints. This
+                    integrated approach de-risks complex campaigns, optimizes production velocity, and ensures that
+                    every digital interaction drives <strong>measurable brand equity</strong> and commercial impact.
+                  </div>
+                </div>
+                <div data-w-id="c62a6ae5-aa68-88a7-6afb-206b88ee7b55"
+                  style="filter:blur(5px);opacity:0;-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="about-bottom">
+                  <div class="about-video-wrap">
+                    <div class="about-video">
+                      <style>
+                        .slideshow-container {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                          overflow: hidden;
+                        }
+
+                        .slideshow-image {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                          object-fit: cover;
+                          opacity: 0;
+                          animation: fade-slideshow 16s infinite ease-in-out;
+                        }
+
+                        .slideshow-image:nth-child(1) {
+                          animation-delay: 0s;
+                        }
+
+                        .slideshow-image:nth-child(2) {
+                          animation-delay: 4s;
+                        }
+
+                        .slideshow-image:nth-child(3) {
+                          animation-delay: 8s;
+                        }
+
+                        .slideshow-image:nth-child(4) {
+                          animation-delay: 12s;
+                        }
+
+                        @keyframes fade-slideshow {
+                          0% {
+                            opacity: 0;
+                          }
+
+                          5% {
+                            opacity: 1;
+                          }
+
+                          25% {
+                            opacity: 1;
+                          }
+
+                          30% {
+                            opacity: 0;
+                          }
+
+                          100% {
+                            opacity: 0;
+                          }
+                        }
+                      </style>
+                      <div class="slideshow-container">
+                        <img src="images/slide02/213.jpg" alt="Slide 1" class="slideshow-image">
+                        <img src="images/slide02/BRP_0801.jpg" alt="Slide 2" class="slideshow-image">
+                        <img src="images/slide02/BRP_0980.jpg" alt="Slide 3" class="slideshow-image">
+                        <img src="images/slide02/BRP_1000.jpg" alt="Slide 4" class="slideshow-image">
+                      </div>
+                    </div>
+                    <div class="about-video-fiiter"></div>
+                  </div>
+                  <div class="statics-marquee">
+                    <div class="statics-marquee-list">
+                      <div class="statics-item">
+                        <div class="statics-item-number">Visionary</div>
+                        <div class="statics-item-name">Logic</div>
+                      </div>
+                      <div class="statics-item">
+                        <div class="statics-item-number">Fluid</div>
+                        <div class="statics-item-name">Integration</div>
+                      </div>
+                      <div class="statics-item">
+                        <div class="statics-item-number">Engineered</div>
+                        <div class="statics-item-name">Impact</div>
+                      </div>
+                    </div>
+                    <div class="statics-marquee-list">
+                      <div class="statics-item">
+                        <div class="statics-item-number">Visionary</div>
+                        <div class="statics-item-name">Logic</div>
+                      </div>
+                      <div class="statics-item">
+                        <div class="statics-item-number">Fluid</div>
+                        <div class="statics-item-name">Integration</div>
+                      </div>
+                      <div class="statics-item">
+                        <div class="statics-item-number">Engineered</div>
+                        <div class="statics-item-name">Impact</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-main">
+          <div class="padding-global">
+            <div class="container-base">
+              <div class="footer-top">
+                <div data-w-id="59e37b90-59be-3d03-4e7f-53909e2ff793" class="heading-layout">
+                  <div class="heading-wrap">
+                    <h2 class="heading-style-h2"><strong>PRACTICAL BRIEF TASK</strong></h2>
+                    <p class="subheading-text"><strong>Brief</strong>: TSA Media Group is pitching to a mid-range Sri
+                      Lankan lifestyle brand launching a new product line targeting urban professionals aged 25–40.
+                      Digital-first campaign across Instagram, LinkedIn, and a landing page. Budget is moderate.
+                      Timeline is 3 weeks.</p>
+                    <div data-w-id="601c94bb-5637-7c6a-2ae5-fa68c603b7a2" id="answer-10" class="heading-layout">
+                      <div class="eye-brow">
+                        <div class="eye-brow-number">010</div>
+                        <div class="eye-brow-text-wrap">
+                          <div class="eye-brow-dot"></div>
+                          <div class="eye-brow-text">Answer</div>
+                        </div>
+                      </div>
+                      <div class="heading-wrap">
+                        <h2 class="heading-style-h2">Creative Direction: &quot;The Modern Equilibrium&quot;</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-text">I leverage a multidisciplinary background in <strong>VR, Web, and
+                    Motion</strong> to eliminate the friction between a brand’s vision and its technical execution. By
+                  acting as the <strong>strategic bridge</strong> between creative concept and final deployment, I
+                  ensure that high-level branding isn&#x27;t just an idea, but a high-performance reality. My direction
+                  synchronizes diverse specialists, translating <strong>emotive design</strong> into <strong>functional
+                    code</strong>—to create a unified brand narrative across all touchpoints. This integrated approach
+                  de-risks complex campaigns, optimizes production velocity, and ensures that every digital interaction
+                  drives <strong>measurable brand equity</strong> and commercial impact.</div>
+                <div class="process-layout">
+                  <div data-w-id="fc13be98-25ae-24ef-2b52-4fe322748b8d" id="answer-11" class="heading-layout">
+                    <div class="eye-brow">
+                      <div class="eye-brow-number">011</div>
+                      <div class="eye-brow-text-wrap">
+                        <div class="eye-brow-dot"></div>
+                        <div class="eye-brow-text">Answer</div>
+                      </div>
+                    </div>
+                    <div class="heading-wrap">
+                      <h2 class="heading-style-h2">Top 5 Client Discovery Questions</h2>
+                    </div>
+                  </div>
+                  <div data-w-id="fc13be98-25ae-24ef-2b52-4fe322748b96" class="process-main">
+                    <div class="process-item active">
+                      <div id="w-node-fc13be98-25ae-24ef-2b52-4fe322748b98-f1952b32" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-icon-frame active">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M29.6991 32.8345C29.5503 31.0109 31.0596 29.4884 32.8675 29.6385C33.1809 29.6645 33.5562 29.7786 33.9384 29.8948C33.9752 29.9059 34.0121 29.9172 34.049 29.9283C34.0823 29.9384 34.1157 29.9484 34.149 29.9584C34.5002 30.064 34.8496 30.169 35.1153 30.3126C36.6407 31.1365 37.1331 33.1053 36.1777 34.5606C36.0113 34.8141 35.7532 35.0737 35.4936 35.3347C35.469 35.3595 35.4444 35.3843 35.4198 35.4091C35.3952 35.4339 35.3706 35.4588 35.3461 35.4836C35.0873 35.7454 34.8299 36.0058 34.5786 36.1737C33.1359 37.1374 31.1841 36.6407 30.3673 35.1019C30.225 34.8339 30.1209 34.4815 30.0162 34.1272C30.0063 34.0936 29.9963 34.06 29.9864 34.0264C29.9753 33.9891 29.9642 33.9519 29.9531 33.9148C29.8379 33.5293 29.7249 33.1507 29.6991 32.8345Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M33.5463 18.5717C33.5463 26.9875 26.7829 33.8098 18.4398 33.8098C10.0967 33.8098 3.33331 26.9875 3.33331 18.5717C3.33331 10.1559 10.0967 3.3335 18.4398 3.3335C26.7829 3.3335 33.5463 10.1559 33.5463 18.5717Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="process-item-number active">01</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot active">
+                          <div class="process-dot-inner active">
+                            <div class="process-dot-dot active"></div>
+                          </div>
+                        </div>
+                        <div class="process-item process-line-hide-top active"></div>
+                      </div>
+                      <div class="process-item-block">
+                        <div class="process-item-content">
+                          <div class="process-item-title">The Singular KPI</div>
+                          <div class="process-item-desc">If we can only move one needle—brand awareness, immediate
+                            sales, or email sign-ups—which is the absolute priority for this 3-week sprint?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="02" class="process-item">
+                      <div class="process-item-block align-right">
+                        <div class="process-item-content">
+                          <div class="process-item-title">The &quot;Anti-Persona&quot;</div>
+                          <div class="process-item-desc">Who are we <em>not</em> talking to? Defining the
+                            &quot;wrong&quot; audience helps us sharpen the visual tone and avoid wasted ad spend.</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w-node-fc13be98-25ae-24ef-2b52-4fe322748bb4-f1952b32" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-number">02</div>
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M13.1782 7.09302C12.6265 4.93166 10.6665 3.3335 8.33331 3.3335C5.57189 3.3335 3.33331 5.57207 3.33331 8.3335C3.33331 10.6667 4.93147 12.6267 7.09284 13.1784C7.08655 13.2292 7.08331 13.281 7.08331 13.3335V26.6668C7.08331 26.7193 7.08656 26.7711 7.09284 26.8219C4.93148 27.3736 3.33331 29.3336 3.33331 31.6668C3.33331 34.4283 5.57189 36.6668 8.33331 36.6668C10.6665 36.6668 12.6265 35.0687 13.1782 32.9073C13.229 32.9136 13.2808 32.9168 13.3333 32.9168H26.6666C26.7192 32.9168 26.7709 32.9136 26.8217 32.9073C27.3735 35.0687 29.3334 36.6668 31.6666 36.6668C34.4281 36.6668 36.6666 34.4283 36.6666 31.6668C36.6666 29.3336 35.0685 27.3736 32.9071 26.8219C32.9134 26.7711 32.9166 26.7193 32.9166 26.6668V13.3335C32.9166 13.281 32.9134 13.2292 32.9071 13.1784C35.0685 12.6267 36.6666 10.6667 36.6666 8.3335C36.6666 5.57207 34.4281 3.3335 31.6666 3.3335C29.3334 3.3335 27.3735 4.93166 26.8217 7.09303C26.7709 7.08674 26.7192 7.0835 26.6666 7.0835H13.3333C13.2808 7.0835 13.229 7.08674 13.1782 7.09302ZM9.57379 13.1784C9.58007 13.2292 9.58331 13.281 9.58331 13.3335L9.58331 26.6668C9.58331 26.7193 9.58007 26.7711 9.57378 26.8219C11.3385 27.2724 12.7278 28.6616 13.1782 30.4264C13.229 30.4201 13.2808 30.4168 13.3333 30.4168H26.6666C26.7192 30.4168 26.7709 30.4201 26.8217 30.4264C27.2722 28.6616 28.6615 27.2724 30.4262 26.8219C30.4199 26.7711 30.4166 26.7193 30.4166 26.6668V13.3335C30.4166 13.281 30.4199 13.2292 30.4262 13.1784C28.6615 12.7279 27.2722 11.3387 26.8217 9.57397C26.7709 9.58025 26.7192 9.5835 26.6666 9.5835H13.3333C13.2808 9.5835 13.229 9.58026 13.1782 9.57397C12.7278 11.3387 11.3385 12.7279 9.57379 13.1784Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="03" class="process-item">
+                      <div id="w-node-fc13be98-25ae-24ef-2b52-4fe322748bbb-f1952b32" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M23.798 3.58723C23.1808 3.3335 22.3983 3.3335 20.8333 3.3335C19.2684 3.3335 18.4859 3.3335 17.8687 3.58723C17.0457 3.92554 16.3918 4.57446 16.0509 5.39122C15.8953 5.76406 15.8344 6.19766 15.8106 6.83015C15.7756 7.75963 15.2953 8.61999 14.4836 9.08505C13.672 9.5501 12.6811 9.53273 11.8525 9.09809C11.2886 8.80233 10.8798 8.63787 10.4766 8.58519C9.59348 8.4698 8.7003 8.70732 7.99359 9.2455C7.46356 9.64913 7.07232 10.3217 6.28984 11.6667C5.50736 13.0118 5.11612 13.6843 5.02891 14.3417C4.91264 15.2182 5.15197 16.1046 5.69424 16.806C5.94176 17.1261 6.28962 17.3952 6.82951 17.7319C7.62319 18.2268 8.13387 19.0699 8.13382 20.0002C8.13377 20.9304 7.62311 21.7734 6.8295 22.2682C6.28953 22.605 5.94162 22.8741 5.69408 23.1943C5.1518 23.8956 4.91248 24.782 5.02875 25.6585C5.11595 26.3159 5.50719 26.9884 6.28967 28.3335C7.07216 29.6786 7.4634 30.3511 7.99343 30.7547C8.70014 31.2929 9.59332 31.5304 10.4765 31.415C10.8796 31.3623 11.2884 31.1979 11.8522 30.9022C12.6809 30.4675 13.6718 30.4501 14.4835 30.9152C15.2952 31.3803 15.7756 32.2407 15.8106 33.1703C15.8344 33.8027 15.8953 34.2363 16.0509 34.6091C16.3918 35.4259 17.0457 36.0748 17.8687 36.4131C18.4859 36.6668 19.2684 36.6668 20.8333 36.6668C22.3983 36.6668 23.1808 36.6668 23.798 36.4131C24.621 36.0748 25.2748 35.4259 25.6157 34.6091C25.7714 34.2362 25.8323 33.8026 25.8561 33.1701C25.8911 32.2407 26.3714 31.3803 27.183 30.9152C27.9947 30.4501 28.9857 30.4674 29.8143 30.9021C30.3781 31.1978 30.7869 31.3622 31.19 31.4149C32.0732 31.5303 32.9664 31.2928 33.6731 30.7546C34.2031 30.351 34.5943 29.6784 35.3768 28.3334C36.1593 26.9883 36.5506 26.3158 36.6378 25.6584C36.754 24.7819 36.5147 23.8955 35.9724 23.1941C35.7249 22.874 35.377 22.6049 34.8371 22.2682C34.0434 21.7733 33.5328 20.9302 33.5328 20C33.5329 19.0699 34.0435 18.227 34.8371 17.7321C35.3771 17.3954 35.725 17.1263 35.9726 16.8061C36.5149 16.1047 36.7542 15.2183 36.6379 14.3418C36.5507 13.6844 36.1595 13.0119 35.377 11.6668C34.5945 10.3218 34.2033 9.64924 33.6732 9.24561C32.9665 8.70743 32.0733 8.46991 31.1902 8.5853C30.787 8.63798 30.3782 8.80242 29.8144 9.09816C28.9858 9.53282 27.9948 9.55019 27.1831 9.0851C26.3714 8.62001 25.8911 7.7596 25.8561 6.83006C25.8322 6.19762 25.7713 5.76405 25.6157 5.39122C25.2748 4.57446 24.621 3.92554 23.798 3.58723ZM20.8333 25.0002C23.6158 25.0002 25.8714 22.7616 25.8714 20.0002C25.8714 17.2387 23.6158 15.0002 20.8333 15.0002C18.0509 15.0002 15.7953 17.2387 15.7953 20.0002C15.7953 22.7616 18.0509 25.0002 20.8333 25.0002Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="process-item-number">03</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="process-item-block">
+                        <div class="process-item-content">
+                          <div class="process-item-title">The Content Archive</div>
+                          <div class="process-item-desc">Do we have existing high-res RAW assets, or do we need to bake
+                            a shoot into the 3-week timeline?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="04" class="process-item">
+                      <div class="process-item-block align-right">
+                        <div class="process-item-content">
+                          <div class="process-item-title">The Emotional Trigger</div>
+                          <div class="process-item-desc">What is the one thing your customer feels <em>right before</em>
+                            they realize they need your product? (Is it stress, ambition, or a desire <br>for status?)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w-node-fc13be98-25ae-24ef-2b52-4fe322748bd6-f1952b32" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-number">04</div>
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3.33331 20.0002C3.33331 10.7954 10.7952 3.3335 20 3.3335C29.2047 3.3335 36.6666 10.7954 36.6666 20.0002C36.6666 29.2049 29.2047 36.6668 20 36.6668C10.7952 36.6668 3.33331 29.2049 3.33331 20.0002ZM18.75 8.3335C18.75 7.64314 19.3096 7.0835 20 7.0835C27.1337 7.0835 32.9166 12.8665 32.9166 20.0002C32.9166 27.1338 27.1337 32.9168 20 32.9168C12.8663 32.9168 7.08331 27.1338 7.08331 20.0002C7.08331 19.3098 7.64296 18.7502 8.33331 18.7502C9.02367 18.7502 9.58331 19.3098 9.58331 20.0002C9.58331 25.7531 14.247 30.4168 20 30.4168C25.7529 30.4168 30.4166 25.7531 30.4166 20.0002C30.4166 14.2472 25.7529 9.5835 20 9.5835C19.3096 9.5835 18.75 9.02385 18.75 8.3335ZM20 12.0835C19.3096 12.0835 18.75 12.6431 18.75 13.3335C18.75 14.0239 19.3096 14.5835 20 14.5835C22.9915 14.5835 25.4166 17.0086 25.4166 20.0002C25.4166 22.9917 22.9915 25.4168 20 25.4168C19.3096 25.4168 18.75 25.9765 18.75 26.6668C18.75 27.3572 19.3096 27.9168 20 27.9168C24.3722 27.9168 27.9166 24.3724 27.9166 20.0002C27.9166 15.6279 24.3722 12.0835 20 12.0835Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div process-item="05" class="process-item">
+                      <div id="w-node-fc13be98-25ae-24ef-2b52-4fe322748bdd-f1952b32" class="process-item-block">
+                        <div class="process-item-number-wrap">
+                          <div class="process-item-icon-frame">
+                            <div class="process-item-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                height="100%" viewbox="0 0 40 40" fill="none" preserveaspectratio="xMidYMid meet"
+                                aria-hidden="true" role="img">
+                                <path
+                                  d="M15.0571 9.93858L10.8186 14.1644C10.0395 14.9412 9.32478 15.6537 8.76038 16.2978C8.39794 16.7114 8.03573 17.1641 7.72893 17.6643L7.68763 17.6232C7.60924 17.545 7.56999 17.5059 7.53063 17.4677C6.79391 16.7529 5.92733 16.1845 4.97724 15.7931C4.92647 15.7722 4.87494 15.7517 4.77189 15.7109L4.1408 15.4608C3.28587 15.1221 3.05802 14.0215 3.70855 13.3729C5.57556 11.5116 7.81718 9.27673 8.89899 8.82787C9.85307 8.43201 10.8837 8.30029 11.8777 8.44719C12.7885 8.58179 13.6501 9.04962 15.0571 9.93858Z"
+                                  fill="currentColor"></path>
+                                <path
+                                  d="M22.2945 32.1888C22.636 32.5354 22.8629 32.7803 23.0679 33.0419C23.3385 33.3872 23.5804 33.7539 23.7913 34.1384C24.0287 34.5712 24.213 35.0335 24.5816 35.9582C24.8817 36.7109 25.8786 36.9099 26.4576 36.3326L26.5976 36.193C28.4646 34.3316 30.7062 32.0967 31.1564 31.0181C31.5534 30.0669 31.6855 29.0394 31.5382 28.0483C31.4032 27.1404 30.9341 26.2815 30.0427 24.879L25.7899 29.119C24.9932 29.9134 24.2626 30.6418 23.6019 31.2124C23.206 31.5543 22.7728 31.8961 22.2945 32.1888Z"
+                                  fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M24.0778 27.2951L33.8225 17.5795C35.2259 16.1804 35.9276 15.4808 36.2972 14.5911C36.6668 13.7015 36.6668 12.7121 36.6668 10.7334V9.78812C36.6668 6.74538 36.6668 5.22401 35.7187 4.27875C34.7706 3.3335 33.2447 3.3335 30.1928 3.3335H29.2447C27.26 3.3335 26.2676 3.3335 25.3753 3.70199C24.483 4.07049 23.7813 4.77008 22.3779 6.16926L12.6332 15.8848C10.9933 17.5197 9.97649 18.5335 9.58275 19.5126C9.45834 19.822 9.39614 20.1279 9.39614 20.4489C9.39614 21.7857 10.4751 22.8615 12.6332 25.013L12.9232 25.3022L16.3207 21.854C16.8053 21.3622 17.5967 21.3564 18.0884 21.8409C18.5802 22.3254 18.5861 23.1168 18.1015 23.6086L14.6936 27.0673L14.9221 27.2951C17.0801 29.4466 18.1591 30.5224 19.4999 30.5224C19.7962 30.5224 20.0796 30.4699 20.3648 30.3648C21.3702 29.9945 22.3966 28.9712 24.0778 27.2951ZM28.6558 15.8855C27.3917 17.1458 25.3421 17.1458 24.078 15.8855C22.8138 14.6252 22.8138 12.5817 24.078 11.3214C25.3421 10.0611 27.3917 10.0611 28.6558 11.3214C29.9199 12.5817 29.9199 14.6252 28.6558 15.8855Z"
+                                  fill="currentColor"></path>
+                              </svg></div>
+                          </div>
+                          <div class="process-item-number">05</div>
+                        </div>
+                      </div>
+                      <div class="process-item-center">
+                        <div class="process-dot">
+                          <div class="process-dot-inner">
+                            <div class="process-dot-dot"></div>
+                          </div>
+                        </div>
+                        <div class="process-item process-line-hide-bottom"></div>
+                      </div>
+                      <div class="process-item-block">
+                        <div class="process-item-content">
+                          <div class="process-item-title">The Visual Evolution</div>
+                          <div class="process-item-desc">Is this campaign a strict adherence to your current guidelines,
+                            or is this the moment to evolve the visual language for a more modern demographic?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="process-line-ray">
+                      <div class="process-line"></div>
+                    </div>
+                  </div>
+                  <div class="value-layout">
+                    <div data-w-id="198c9903-c878-9f68-a989-0a9f5c431982" id="answer-12" class="heading-layout">
+                      <div class="eye-brow">
+                        <div class="eye-brow-number">012</div>
+                        <div class="eye-brow-text-wrap">
+                          <div class="eye-brow-dot"></div>
+                          <div class="eye-brow-text">Answer<br></div>
+                        </div>
+                      </div>
+                      <div class="heading-wrap">
+                        <h2 class="heading-style-h2">The Internal Team Brief </h2>
+                        <p class="subheading-text">The &quot;WHO-FEEL-DO&quot; Roadmap</p>
+                      </div>
+                    </div>
+                    <div data-w-id="198c9903-c878-9f68-a989-0a9f5c431994" class="value-bottom">
+                      <div class="value-card">
+                        <div class="value-card-top">
+                          <div class="value-icon-l2">
+                            <div class="value-icon-l1">
+                              <div class="value-icon-frame">
+                                <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                    height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                                    aria-hidden="true" role="img">
+                                    <path
+                                      d="M27.4055 44.0403C27.4179 43.7474 27.9032 43.631 28.0471 43.8865C28.7226 45.0857 29.875 46.8493 31.1826 47.6512C32.4902 48.4531 34.5846 48.6806 35.9597 48.739C36.2527 48.7514 36.369 49.2367 36.1136 49.3806C34.9144 50.0561 33.1508 51.2085 32.3489 52.5161C31.547 53.8237 31.3195 55.9181 31.2611 57.2932C31.2486 57.5862 30.7634 57.7025 30.6195 57.4471C29.944 56.2479 28.7916 54.4843 27.484 53.6823C26.1763 52.8804 24.0819 52.653 22.7068 52.5946C22.4139 52.5821 22.2975 52.0969 22.553 51.953C23.7522 51.2775 25.5158 50.1251 26.3177 48.8175C27.1196 47.5098 27.3471 45.4154 27.4055 44.0403Z"
+                                      fill="currentColor"></path>
+                                    <path opacity="0.5"
+                                      d="M49.3123 41.3734C49.2897 41.081 48.7781 40.9584 48.6255 41.2087C48.166 41.9621 47.5034 42.8713 46.767 43.3229C46.0305 43.7746 44.9197 43.9529 44.0399 44.0209C43.7475 44.0434 43.6249 44.555 43.8752 44.7077C44.6286 45.1671 45.5378 45.8297 45.9894 46.5662C46.4411 47.3027 46.6194 48.4135 46.6874 49.2933C46.7099 49.5856 47.2215 49.7083 47.3742 49.4579C47.8336 48.7046 48.4962 47.7954 49.2327 47.3437C49.9692 46.8921 51.08 46.7138 51.9598 46.6458C52.2521 46.6232 52.3748 46.1116 52.1245 45.959C51.3711 45.4995 50.4619 44.8369 50.0102 44.1005C49.5586 43.364 49.3803 42.2532 49.3123 41.3734Z"
+                                      fill="currentColor"></path>
+                                    <path
+                                      d="M39.2098 10.6714L38.5636 9.85521C36.0659 6.70035 34.817 5.12292 33.3641 5.35578C31.9112 5.58864 31.2165 7.47758 29.827 11.2555L29.4675 12.2329C29.0727 13.3064 28.8753 13.8432 28.4967 14.2372C28.118 14.6311 27.601 14.8377 26.5671 15.2509L25.6258 15.627L24.9648 15.8915C21.7661 17.1748 20.1543 17.9021 19.9485 19.3152C19.729 20.8226 21.2546 22.112 24.3058 24.691L25.0952 25.3582C25.9623 26.091 26.3958 26.4575 26.6443 26.9569C26.8928 27.4564 26.9282 28.0323 26.999 29.1842L27.0634 30.2328C27.3124 34.2863 27.4369 36.313 28.7541 37.0117C30.0714 37.7104 31.709 36.6184 34.9841 34.4344L34.9842 34.4344L35.8315 33.8694C36.7622 33.2488 37.2276 32.9384 37.7598 32.8531C38.2921 32.7678 38.8309 32.9172 39.9086 33.2159L40.8897 33.4879C44.6821 34.5392 46.5783 35.0648 47.6119 33.9893C48.6455 32.9138 48.132 30.9494 47.105 27.0207L46.8393 26.0043C46.5475 24.8878 46.4015 24.3296 46.4819 23.7774C46.5624 23.2253 46.86 22.7417 47.4553 21.7745L47.4553 21.7744L47.9972 20.8938C50.0921 17.4901 51.1395 15.7883 50.4611 14.4248C49.7826 13.0614 47.8276 12.9394 43.9177 12.6953L42.9061 12.6321C41.7951 12.5628 41.2395 12.5281 40.757 12.2721C40.2745 12.0162 39.9196 11.5679 39.2098 10.6714L39.2098 10.6714Z"
+                                      fill="currentColor"></path>
+                                    <path opacity="0.5"
+                                      d="M23.5594 35.5367C17.8599 38.3212 13.1175 42.7313 11.3285 48.0012C9.32171 35.4477 12.1054 27.3411 16.5676 22.3027C16.9521 23.0887 17.4518 23.7393 17.9006 24.2478C18.8336 25.305 20.1732 26.4366 21.5333 27.5856L22.512 28.4128C22.6976 28.5696 22.8419 28.6917 22.9646 28.7976C22.9771 28.9692 22.9895 29.1695 23.0054 29.4291L23.0849 30.7237C23.1918 32.4703 23.2962 34.1754 23.5594 35.5367Z"
+                                      fill="currentColor"></path>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="value-card-number">01</div>
+                        </div>
+                        <div class="value-card-bottom">
+                          <div class="value-card-title">To the Designer</div>
+                          <div class="value-card-desc">I want &#x27;Quiet Luxury.&#x27; Use a high-contrast serif for
+                            headings and a clean sans-serif for body. Focus on macro-textures of the product. The UI
+                            should be a bento-style layout—no clutter. Remember: WHO is an urban pro; make them FEEL
+                            that this product is their reward for a hard day&#x27;s work.</div>
+                        </div>
+                      </div>
+                      <div class="value-card">
+                        <div class="value-card-top">
+                          <div class="value-icon-l2">
+                            <div class="value-icon-l1">
+                              <div class="value-icon-frame">
+                                <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                    height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                                    aria-hidden="true" role="img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M40.1952 37.7795L52.1706 25.8401C53.8953 24.1207 54.7576 23.2609 55.2118 22.1677C55.666 21.0744 55.666 19.8586 55.666 17.427V16.2653C55.666 12.5261 55.666 10.6565 54.5009 9.49487C53.3357 8.33325 51.4605 8.33325 47.71 8.33325H46.5449C44.1059 8.33325 42.8863 8.33325 41.7898 8.7861C40.6932 9.23894 39.8309 10.0987 38.1063 11.8181L26.1308 23.7575C24.1156 25.7666 22.866 27.0124 22.3822 28.2157C22.2293 28.5959 22.1528 28.9718 22.1528 29.3663C22.1528 31.009 23.4788 32.3311 26.1308 34.9751L26.4873 35.3304L30.6625 31.0929C31.258 30.4886 32.2306 30.4814 32.8349 31.0769C33.4392 31.6723 33.4464 32.6449 32.851 33.2492L28.663 37.4996L28.9437 37.7795C31.5957 40.4235 32.9217 41.7455 34.5695 41.7455C34.9335 41.7455 35.2819 41.681 35.6323 41.5519C36.8679 41.0968 38.1292 39.8393 40.1952 37.7795ZM45.8212 23.7583C44.2677 25.3072 41.749 25.3072 40.1955 23.7583C38.6419 22.2095 38.6419 19.6984 40.1955 18.1495C41.749 16.6007 44.2677 16.6007 45.8212 18.1495C47.3747 19.6984 47.3747 22.2095 45.8212 23.7583Z"
+                                      fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M9.89003 33.2889C10.5954 33.9951 10.5947 35.1394 9.88847 35.8447L9.51789 36.2148C9.20134 36.531 9.20134 37.0427 9.51789 37.3589C9.83565 37.6762 10.3518 37.6762 10.6695 37.3589L14.746 33.2874C15.4522 32.582 16.5965 32.5827 17.3018 33.2889C18.0072 33.9951 18.0065 35.1394 17.3003 35.8447L13.2238 39.9162C11.4948 41.643 8.69258 41.643 6.96363 39.9162C5.23348 38.1882 5.23348 35.3855 6.96363 33.6575L7.33422 33.2874C8.04042 32.582 9.18469 32.5827 9.89003 33.2889ZM20.6593 43.3236C21.3572 44.0372 21.3445 45.1814 20.6309 45.8793L16.5114 49.908C15.7979 50.6058 14.6537 50.5931 13.9558 49.8795C13.2579 49.166 13.2707 48.0218 13.9842 47.3239L18.1037 43.2952C18.8173 42.5973 19.9615 42.6101 20.6593 43.3236ZM30.6211 46.7095C31.3264 47.4157 31.3257 48.56 30.6195 49.2653L26.543 53.3368C26.2265 53.6529 26.2265 54.1646 26.543 54.4808C26.8608 54.7982 27.3769 54.7982 27.6947 54.4808L28.0652 54.1107C28.7714 53.4053 29.9157 53.406 30.6211 54.1122C31.3264 54.8184 31.3257 55.9627 30.6195 56.668L30.2489 57.0381C28.52 58.765 25.7177 58.765 23.9888 57.0381C22.2586 55.3101 22.2586 52.5075 23.9888 50.7794L28.0652 46.708C28.7714 46.0026 29.9157 46.0033 30.6211 46.7095Z"
+                                      fill="currentColor"></path>
+                                    <g opacity="0.5">
+                                      <path
+                                        d="M29.1105 16.4506L23.9017 21.6437C22.9442 22.5983 22.066 23.4738 21.3724 24.2654C20.927 24.7737 20.4818 25.33 20.1048 25.9448L20.0541 25.8942C19.9577 25.7981 19.9095 25.75 19.8611 25.7031C18.9558 24.8246 17.8908 24.1262 16.7232 23.6452C16.6609 23.6195 16.5975 23.5944 16.4709 23.5442L15.6953 23.2369C14.6447 22.8206 14.3647 21.4681 15.1641 20.6711C17.4585 18.3836 20.2133 15.6373 21.5427 15.0857C22.7152 14.5992 23.9817 14.4373 25.2033 14.6179C26.3226 14.7833 27.3814 15.3582 29.1105 16.4506Z"
+                                        fill="currentColor"></path>
+                                      <path
+                                        d="M38.0045 43.7937C38.4243 44.2197 38.7031 44.5207 38.955 44.8422C39.2876 45.2665 39.5849 45.7171 39.844 46.1896C40.1358 46.7215 40.3623 47.2896 40.8153 48.426C41.184 49.351 42.4091 49.5955 43.1206 48.8861L43.2928 48.7145C45.5871 46.427 48.3417 43.6806 48.895 42.3551C49.383 41.1862 49.5453 39.9234 49.3642 38.7056C49.1984 37.5898 48.6218 36.5343 47.5264 34.8108L42.3002 40.0213C41.321 40.9975 40.4232 41.8926 39.6113 42.5939C39.1247 43.0141 38.5923 43.4341 38.0045 43.7937Z"
+                                        fill="currentColor"></path>
+                                    </g>
+                                    <g opacity="0.5">
+                                      <path
+                                        d="M21.5876 38.246C22.2934 37.5402 22.2934 36.396 21.5876 35.6902C20.8818 34.9844 19.7376 34.9844 19.0318 35.6902L13.9308 40.7911C13.225 41.4969 13.225 42.6411 13.9308 43.3469C14.6366 44.0527 15.7809 44.0527 16.4866 43.3469L21.5876 38.246Z"
+                                        fill="currentColor"></path>
+                                      <path
+                                        d="M28.2761 44.9262C28.9818 44.2205 28.9818 43.0762 28.2761 42.3705C27.5703 41.6647 26.426 41.6647 25.7202 42.3705L20.6542 47.4365C19.9484 48.1422 19.9484 49.2865 20.6542 49.9923C21.3599 50.698 22.5042 50.698 23.21 49.9923L28.2761 44.9262Z"
+                                        fill="currentColor"></path>
+                                    </g>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="value-card-number">02</div>
+                        </div>
+                        <div class="value-card-bottom">
+                          <div class="value-card-title">To the Copywriter</div>
+                          <div class="value-card-desc">Keep it punchy. No corporate jargon. Our voice is the
+                            &#x27;Successful Peer&#x27;—knowledgeable but not arrogant. On LinkedIn, talk about
+                            &#x27;efficiency and lifestyle balance.&#x27; On Instagram, talk about &#x27;the
+                            moment.&#x27; The DO is clear: &#x27;Upgrade Your Routine&#x27;—not just &#x27;Buy
+                            Now&#x27;.</div>
+                        </div>
+                      </div>
+                      <div class="value-card">
+                        <div class="value-card-top">
+                          <div class="value-icon-l2">
+                            <div class="value-icon-l1">
+                              <div class="value-icon-frame">
+                                <div class="value-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                                    height="100%" viewbox="0 0 64 64" fill="none" preserveaspectratio="xMidYMid meet"
+                                    aria-hidden="true" role="img">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M45.1999 9.80005C46.194 9.80005 46.9999 10.6059 46.9999 11.6V17H52.3999C53.394 17 54.1999 17.8059 54.1999 18.8C54.1999 19.7941 53.394 20.6 52.3999 20.6H46.9999V26C46.9999 26.9941 46.194 27.8 45.1999 27.8C44.2058 27.8 43.3999 26.9941 43.3999 26V20.6H37.9999C37.0058 20.6 36.2 19.7941 36.2 18.8C36.2 17.8059 37.0058 17 37.9999 17H43.3999V11.6C43.3999 10.6059 44.2058 9.80005 45.1999 9.80005Z"
+                                      fill="currentColor"></path>
+                                    <path
+                                      d="M8 18.8C8 13.7088 8 11.1632 9.58162 9.58162C11.1632 8 13.7088 8 18.8 8C23.8911 8 26.4367 8 28.0183 9.58162C29.6 11.1632 29.6 13.7088 29.6 18.8C29.6 23.8911 29.6 26.4367 28.0183 28.0183C26.4367 29.6 23.8911 29.6 18.8 29.6C13.7088 29.6 11.1632 29.6 9.58162 28.0183C8 26.4367 8 23.8911 8 18.8Z"
+                                      fill="currentColor"></path>
+                                    <path
+                                      d="M34.4 45.1999C34.4 40.1087 34.4 37.5631 35.9816 35.9815C37.5633 34.3999 40.1088 34.3999 45.2 34.3999C50.2912 34.3999 52.8367 34.3999 54.4184 35.9815C56 37.5631 56 40.1087 56 45.1999C56 50.291 56 52.8366 54.4184 54.4182C52.8367 55.9999 50.2912 55.9999 45.2 55.9999C40.1088 55.9999 37.5633 55.9999 35.9816 54.4182C34.4 52.8366 34.4 50.291 34.4 45.1999Z"
+                                      fill="currentColor"></path>
+                                    <path opacity="0.5"
+                                      d="M8 45.1999C8 40.1087 8 37.5631 9.58162 35.9815C11.1632 34.3999 13.7088 34.3999 18.8 34.3999C23.8911 34.3999 26.4367 34.3999 28.0183 35.9815C29.6 37.5631 29.6 40.1087 29.6 45.1999C29.6 50.291 29.6 52.8366 28.0183 54.4182C26.4367 55.9999 23.8911 55.9999 18.8 55.9999C13.7088 55.9999 11.1632 55.9999 9.58162 54.4182C8 52.8366 8 50.291 8 45.1999Z"
+                                      fill="currentColor"></path>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="value-card-number">03</div>
+                        </div>
+                        <div class="value-card-bottom">
+                          <div class="value-card-title">To the Social Lead</div>
+                          <div class="value-card-desc">We are playing the &#x27;Algorithm Game.&#x27; For Instagram, I
+                            need 3 Reels using &#x27;Texture-First&#x27; cinematography and trending, low-fi audio. For
+                            LinkedIn, create a 7-slide &#x27;Insight Carousel&#x27; that provides value first and sells
+                            second. We need to maintain a 5x posting frequency over the launch week to dominate the
+                            local feed.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="footer-bottom-row">
+                  <div class="footer-bottom-row-inner">
+                    <div class="footer-bottom-row-text">Powered by <a href="https://webflow.com" target="_blank"
+                        class="footer-link">a Sudden Assesment</a>
+                    </div>
+                    <div class="footer-bottom-row-text">
+                      <div class="footer-bottom-row-text">Designed by Lonath G</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-poster-url="https://cdn.prod.website-files.com/69abbb96278770785e4b2dc1%2F69b0d1d271397d4fd4227e2d_Footer%20Video_poster.0000000.jpg"
+          data-video-urls="videos/Footer-Video_mp4.mp4,videos/Footer-Video_webm.webm" data-autoplay="true"
+          data-loop="true" data-wf-ignore="true" class="footer-bg-video w-background-video w-background-video-atom">
+          <video id="7950d139-b437-4d31-266e-1905f1952b53-video" autoplay="" loop=""
+            style="background-image:url(&quot;https://cdn.prod.website-files.com/69abbb96278770785e4b2dc1%2F69b0d1d271397d4fd4227e2d_Footer%20Video_poster.0000000.jpg&quot;)"
+            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="videos/Footer-Video_mp4.mp4" data-wf-ignore="true">
+            <source src="videos/Footer-Video_webm.webm" data-wf-ignore="true">
+          </video>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69ec8bfbf663865f7dad051f"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+</body>
+
+</html>
